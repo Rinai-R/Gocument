@@ -22,7 +22,21 @@ message LoginResponse {
   string Msg = 2;
 }
 
+message AlterRequest {
+  string Username = 1;
+  string Password = 2;
+  string Bio = 3;
+  string Gender = 4;
+  string Avatar = 5;
+}
+
+message AlterResponse {
+  int64 Code = 1;
+  string Msg = 2;
+}
+
 service User {
   rpc Register(RegisterRequest) returns(RegisterResponse);
   rpc Login(LoginRequest) returns(LoginResponse);
+  rpc Alter(AlterRequest) returns(AlterResponse);
 }

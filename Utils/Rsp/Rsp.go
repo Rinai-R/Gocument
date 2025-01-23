@@ -65,3 +65,19 @@ func TokenError(data interface{}) Rsp {
 		Data: data,
 	}
 }
+
+func RequestNull(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.RequestNull,
+		Info: "RequestNull",
+		Data: data,
+	}
+}
+
+func UserNotExists(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.UserNotExists,
+		Info: "UserNotExists",
+		Data: data,
+	}
+}

@@ -1,7 +1,17 @@
-2025-01-23T13:54:38.366+0800	DEBUG	Nacos init success
-2025-01-23T14:02:08.156+0800	DEBUG	Nacos init success
-2025-01-23T14:02:08.163+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
-2025-01-23T14:02:19.405+0800	DEBUG	Nacos init success
-2025-01-23T14:02:26.597+0800	DEBUG	DAO: User Password Not Match
-2025-01-23T14:02:26.597+0800	DEBUG	Service: User Username Or Password Error
-2025-01-23T14:02:26.597+0800	DEBUG	API: login username or password error
+2025-01-23T16:42:54.101+0800	DEBUG	Viper: OK
+2025-01-23T16:42:54.371+0800	DEBUG	Nacos init success
+2025-01-23T16:42:54.375+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T16:42:56.236+0800	DEBUG	Nacos init success
+2025-01-23T16:43:15.115+0800	DEBUG	解析token成功
+2025-01-23T16:43:15.160+0800	DEBUG	Dao: WHERE conditions required
+2025-01-23T16:43:15.160+0800	DEBUG	Service: Internal Error, Alter User Failed WHERE conditions required
+2025-01-23T16:43:15.161+0800	DEBUG	API: Internal Error InternalErr: internal error
+2025-01-23T16:44:10.452+0800	DEBUG	Viper: OK
+2025-01-23T16:44:10.710+0800	DEBUG	Nacos init success
+2025-01-23T16:44:10.720+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T16:44:16.870+0800	DEBUG	解析token成功
+2025-01-23T16:44:16.959+0800	DEBUG	API: AlterUserInfo ok
+2025-01-23T16:44:44.905+0800	DEBUG	解析token成功
+2025-01-23T16:44:44.905+0800	DEBUG	Api: BindJSON Error EOF
+2025-01-23T16:45:29.563+0800	DEBUG	解析token成功
+2025-01-23T16:45:29.742+0800	DEBUG	API: AlterUserInfo ok

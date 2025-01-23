@@ -39,8 +39,8 @@ func Login(c context.Context, ctx *app.RequestContext) {
 		ctx.JSON(http.StatusBadRequest, Rsp.UsernameOrPassword(ErrCode.UsernameOrPassword))
 		break
 	default:
-		Logger.Logger.Debug("API: Internal error")
-		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(ErrCode.InternalErr))
+		Logger.Logger.Debug("API: Internal error" + res.Msg)
+		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))
 		break
 	}
 	return

@@ -1,9 +1,9 @@
 package Middleware
 
 import (
-	"errors"
 	"fmt"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/golang-jwt/jwt/v5"
 	"time"
 )
@@ -40,5 +40,5 @@ func VerifyJWT(TokenString string) (string, error) {
 		Logger.Logger.Debug("解析token成功")
 		return message, nil
 	}
-	return "", errors.New("token invalid")
+	return "", Error.TokenError
 }

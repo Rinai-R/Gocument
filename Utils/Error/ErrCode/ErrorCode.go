@@ -9,4 +9,6 @@ var (
 	UsernameOrPassword  = 40004
 	InternalErr         = 50000
 	TokenError          = 40005
+	RequestNull         = 40006
+	UserNotExists       = 40007
 )

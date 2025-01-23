@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/Rinai-R/Gocument/Utils/Rsp"
 	"github.com/cloudwego/hertz/pkg/app"
+	"net/http"
 )
 
 func Token() app.HandlerFunc {
@@ -11,14 +12,14 @@ func Token() app.HandlerFunc {
 		auth := ctx.Request.Header.Get("Authorization")
 
 		if auth == "" {
-			ctx.JSON(400, Rsp.TokenError("token null"))
+			ctx.JSON(http.StatusUnauthorized, Rsp.TokenError("token null"))
 			ctx.Abort()
 			return
 		}
 
 		claims, err := VerifyJWT(auth)
 		if err != nil {
-			ctx.JSON(400, Rsp.TokenError(err))
+			ctx.JSON(http.StatusUnauthorized, Rsp.TokenError(err))
 			ctx.Abort()
 			return
 		}

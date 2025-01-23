@@ -27,4 +27,6 @@ func init() {
 		Logger.Logger.Panic("Viper: " + err.Error())
 	}
 
+	Logger.Logger.Debug("Viper: OK")
+
 }

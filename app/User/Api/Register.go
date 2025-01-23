@@ -45,8 +45,8 @@ func Register(c context.Context, ctx *app.RequestContext) {
 		ctx.JSON(http.StatusBadRequest, Rsp.UserNameExistsErr(Error.UserExists))
 		break
 	default:
-		Logger.Logger.Debug("API: InternalError")
-		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(Error.InternalError))
+		Logger.Logger.Debug("API: InternalError" + res.Msg)
+		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))
 		break
 	}
 	return

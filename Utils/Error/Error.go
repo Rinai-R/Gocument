@@ -9,4 +9,6 @@ var (
 	UserExists         = errors.New("UserExists: user exists")
 	InternalError      = errors.New("InternalErr: internal error")
 	TokenError         = errors.New("token invalid")
+	RequestNull        = errors.New("request is null")
+	UserNotExists      = errors.New("UserNotExists: user not exists")
 )
