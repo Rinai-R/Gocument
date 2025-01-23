@@ -4,6 +4,7 @@
     <inspection_tool class="GoDfaErrorMayBeNotNil" enabled="true" level="WARNING" enabled_by_default="true">
       <methods>
         <method importPath="github.com/Rinai-R/Gocument/app/User/Client/rpc" receiver="UserClient" name="Register" />
+        <method importPath="github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client" receiver="INamingClient" name="GetService" />
       </methods>
     </inspection_tool>
   </profile>

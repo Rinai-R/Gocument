@@ -3,6 +3,7 @@ package Middleware
 import (
 	"errors"
 	"fmt"
+	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/golang-jwt/jwt/v5"
 	"time"
 )
@@ -16,8 +17,10 @@ func GenerateJWT(Message string) (string, error) {
 	claims["exp"] = time.Now().Add(60 * time.Hour).Unix()
 	TokenString, err := token.SignedString(UserSigningKey)
 	if err != nil {
+		Logger.Logger.Debug(err.Error())
 		return "", err
 	}
+	Logger.Logger.Debug("产生token成功")
 	return TokenString, nil
 }
 
@@ -29,10 +32,12 @@ func VerifyJWT(TokenString string) (string, error) {
 		return UserSigningKey, nil
 	})
 	if err != nil {
+		Logger.Logger.Debug(err.Error())
 		return "", err
 	}
 	if claims, ok1 := token.Claims.(jwt.MapClaims); ok1 {
 		message := claims["GetName"].(string)
+		Logger.Logger.Debug("解析token成功")
 		return message, nil
 	}
 	return "", errors.New("token invalid")

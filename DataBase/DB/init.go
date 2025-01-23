@@ -2,6 +2,7 @@ package DB
 
 import (
 	"github.com/Rinai-R/Gocument/DataBase/conf/DB"
+	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/models"
 	"github.com/redis/go-redis/v9"
 	"gorm.io/driver/mysql"
@@ -21,10 +22,11 @@ func init() {
 	dsn := conf.DB.MySQL.UserName + ":" + conf.DB.MySQL.Password + "@tcp(" + conf.DB.MySQL.Addr + ")/" + conf.DB.MySQL.DBName + "?charset=utf8mb4&parseTime=True&loc=Local"
 	Db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic(err.Error() + "mysql connect fail")
 	}
 	err = Db.AutoMigrate(models.User{})
 	if err != nil {
+		Logger.Logger.Panic(err.Error() + "mysql migrate fail")
 		return
 	}
 }

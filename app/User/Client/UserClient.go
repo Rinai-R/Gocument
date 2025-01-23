@@ -2,12 +2,12 @@ package Client
 
 import (
 	"fmt"
+	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Registry"
 	pb "github.com/Rinai-R/Gocument/app/User/Client/rpc"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	"log"
 )
 
 var (
@@ -24,12 +24,11 @@ func init() {
 	}
 	service, err := Registry.Client.GetService(param)
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic(err.Error())
 	}
 
 	if len(service.Hosts) == 0 {
-		log.Fatal("no healthy instance found for service 'User'")
-		return
+		Logger.Logger.Panic("service host is empty")
 	}
 
 	addr := fmt.Sprintf("%s:%d", service.Hosts[0].Ip, service.Hosts[0].Port)
