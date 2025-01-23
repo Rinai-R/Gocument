@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Registry"
-	pb "github.com/Rinai-R/Gocument/app/User/Client/rpc"
+	"github.com/Rinai-R/Gocument/app/Func/User/Client/rpc"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -24,11 +24,11 @@ func init() {
 	}
 	service, err := Registry.Client.GetService(param)
 	if err != nil {
-		Logger.Logger.Panic(err.Error())
+		Logger.Logger.Panic("Client " + err.Error())
 	}
 
 	if len(service.Hosts) == 0 {
-		Logger.Logger.Panic("service host is empty")
+		Logger.Logger.Panic("Client: service host is empty")
 	}
 
 	addr := fmt.Sprintf("%s:%d", service.Hosts[0].Ip, service.Hosts[0].Port)
@@ -37,7 +37,9 @@ func init() {
 
 	UserConn, err = grpc.Dial(addr, opt)
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic("Client: " + err.Error())
 	}
 	UserClient = pb.NewUserClient(UserConn)
+
+	Logger.Logger.Debug("Client: User client OK")
 }

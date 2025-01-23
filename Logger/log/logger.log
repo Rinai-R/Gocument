@@ -1,17 +1,44 @@
-2025-01-23T16:42:54.101+0800	DEBUG	Viper: OK
-2025-01-23T16:42:54.371+0800	DEBUG	Nacos init success
-2025-01-23T16:42:54.375+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
-2025-01-23T16:42:56.236+0800	DEBUG	Nacos init success
-2025-01-23T16:43:15.115+0800	DEBUG	解析token成功
-2025-01-23T16:43:15.160+0800	DEBUG	Dao: WHERE conditions required
-2025-01-23T16:43:15.160+0800	DEBUG	Service: Internal Error, Alter User Failed WHERE conditions required
-2025-01-23T16:43:15.161+0800	DEBUG	API: Internal Error InternalErr: internal error
-2025-01-23T16:44:10.452+0800	DEBUG	Viper: OK
-2025-01-23T16:44:10.710+0800	DEBUG	Nacos init success
-2025-01-23T16:44:10.720+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
-2025-01-23T16:44:16.870+0800	DEBUG	解析token成功
-2025-01-23T16:44:16.959+0800	DEBUG	API: AlterUserInfo ok
-2025-01-23T16:44:44.905+0800	DEBUG	解析token成功
-2025-01-23T16:44:44.905+0800	DEBUG	Api: BindJSON Error EOF
-2025-01-23T16:45:29.563+0800	DEBUG	解析token成功
-2025-01-23T16:45:29.742+0800	DEBUG	API: AlterUserInfo ok
+2025-01-23T19:31:00.365+0800	DEBUG	解析token成功
+2025-01-23T19:31:00.383+0800	DEBUG	Document created
+2025-01-23T19:31:00.384+0800	DEBUG	Create Document OK
+2025-01-23T19:32:44.824+0800	DEBUG	解析token成功
+2025-01-23T19:32:44.832+0800	DEBUG	Document created
+2025-01-23T19:32:44.833+0800	DEBUG	Create Document OK
+2025-01-23T19:33:00.516+0800	DEBUG	解析token成功
+2025-01-23T19:33:00.521+0800	DEBUG	Document created
+2025-01-23T19:33:00.522+0800	DEBUG	Create Document OK
+2025-01-23T19:33:12.659+0800	DEBUG	解析token成功
+2025-01-23T19:33:12.707+0800	DEBUG	Document created
+2025-01-23T19:33:12.707+0800	DEBUG	Create Document OK
+2025-01-23T19:34:06.967+0800	DEBUG	Nacos init success
+2025-01-23T19:34:06.976+0800	DEBUG	Client: Document client OK
+2025-01-23T19:34:06.981+0800	DEBUG	Client: User client OK
+2025-01-23T19:34:09.821+0800	DEBUG	解析token成功
+2025-01-23T19:34:20.348+0800	DEBUG	解析token成功
+2025-01-23T19:36:02.639+0800	DEBUG	Nacos init success
+2025-01-23T19:36:02.646+0800	DEBUG	Client: Document client OK
+2025-01-23T19:36:02.648+0800	DEBUG	Client: User client OK
+2025-01-23T19:36:05.516+0800	DEBUG	解析token成功
+2025-01-23T19:36:48.849+0800	DEBUG	Nacos init success
+2025-01-23T19:36:48.857+0800	DEBUG	Client: Document client OK
+2025-01-23T19:36:48.864+0800	DEBUG	Client: User client OK
+2025-01-23T19:36:55.781+0800	DEBUG	解析token成功
+2025-01-23T19:37:18.707+0800	DEBUG	token is malformed: could not JSON decode header: invalid character '\b' in string literal
+2025-01-23T19:38:16.831+0800	DEBUG	token is malformed: could not JSON decode header: invalid character '\b' in string literal
+2025-01-23T19:38:37.908+0800	DEBUG	解析token成功
+2025-01-23T19:38:37.912+0800	DEBUG	Document created
+2025-01-23T19:38:37.912+0800	DEBUG	Create Document OK
+2025-01-23T19:39:53.857+0800	DEBUG	解析token成功
+2025-01-23T19:39:53.913+0800	DEBUG	API: AlterUserInfo ok
+2025-01-23T19:40:09.649+0800	DEBUG	解析token成功
+2025-01-23T19:40:09.649+0800	DEBUG	API: AlterUserInfo Request null
+2025-01-23T19:41:17.950+0800	DEBUG	DAO: Login OK 
+2025-01-23T19:41:17.950+0800	DEBUG	Service: User Success
+2025-01-23T19:41:17.951+0800	DEBUG	API: login ok
+2025-01-23T19:41:17.951+0800	DEBUG	产生token成功
+2025-01-23T19:41:50.229+0800	DEBUG	DAO: User Already ExistError 1062 (23000): Duplicate entry 'rinai1123' for key 'users.uni_users_username'
+2025-01-23T19:41:50.229+0800	DEBUG	Service: User Exists Error
+2025-01-23T19:41:50.231+0800	DEBUG	API: user name exists
+2025-01-23T19:41:53.944+0800	DEBUG	DAO: User Created Success
+2025-01-23T19:41:53.944+0800	DEBUG	Service: User Success
+2025-01-23T19:41:53.944+0800	DEBUG	API: register success

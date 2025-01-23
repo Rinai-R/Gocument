@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Registry"
-	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
-	"github.com/Rinai-R/Gocument/Server/User/service"
+	pb "github.com/Rinai-R/Gocument/Server/Document/rpc"
+	"github.com/Rinai-R/Gocument/Server/Document/service"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
@@ -13,20 +13,20 @@ import (
 )
 
 func main() {
-	listener, err := net.Listen("tcp", "127.0.0.1:10001")
+	listener, err := net.Listen("tcp", "127.0.0.1:10002")
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic(err.Error())
 	}
 	defer listener.Close()
 
 	grpcServer := grpc.NewServer(grpc.Creds(insecure.NewCredentials()))
 
-	pb.RegisterUserServer(grpcServer, &service.UserServer{})
+	pb.RegisterDocumentServer(grpcServer, &service.DocumentServer{})
 
 	Registry.RegisterServiceInstance(Registry.Client, vo.RegisterInstanceParam{
 		Ip:          "127.0.0.1",
-		Port:        10001,
-		ServiceName: "User",
+		Port:        10002,
+		ServiceName: "Document",
 		GroupName:   "Gocument",
 		ClusterName: "cluster1",
 		Weight:      10,
@@ -52,10 +52,9 @@ func main() {
 	}(listener)
 	defer Registry.DeRegisterServiceInstance(Registry.Client, vo.DeregisterInstanceParam{
 		Ip:          "127.0.0.1", // 根据实际情况填写
-		Port:        10001,       // gRPC服务的端口
+		Port:        10002,       // gRPC服务的端口
 		Cluster:     "cluster1",
-		ServiceName: "User",
+		ServiceName: "Document",
 		GroupName:   "Gocument",
 	})
-
 }

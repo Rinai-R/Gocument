@@ -1,0 +1,19 @@
+syntax="proto3";
+
+option go_package=".;pb";
+
+message CreateRequest {
+  string Username = 1;
+  string Title = 2;
+  bool IsPrivate = 3;
+}
+
+message CreateResponse {
+  int64 Code = 1;
+  string Msg = 2;
+}
+
+
+service Document {
+  rpc Create(CreateRequest) returns(CreateResponse);
+}

@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 	"errors"
-	"github.com/Rinai-R/Gocument/DataBase/dao"
+	"github.com/Rinai-R/Gocument/DataBase/User/dao"
 	"github.com/Rinai-R/Gocument/Logger"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"

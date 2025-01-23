@@ -9,3 +9,6 @@ Redis:
   UserName: "root"
   Password: "123456"
   DBName: "0"
+
+ElasticSearch:
+  Addr: "http://192.168.195.129:9200"

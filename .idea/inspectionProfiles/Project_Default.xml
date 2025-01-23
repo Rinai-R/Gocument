@@ -2,6 +2,9 @@
   <profile version="1.0">
     <option name="myName" value="Project Default" />
     <inspection_tool class="GoDfaErrorMayBeNotNil" enabled="true" level="WARNING" enabled_by_default="true">
+      <functions>
+        <function importPath="net" name="Listen" />
+      </functions>
       <methods>
         <method importPath="github.com/Rinai-R/Gocument/app/User/Client/rpc" receiver="UserClient" name="Register" />
         <method importPath="github.com/nacos-group/nacos-sdk-go/v2/clients/naming_client" receiver="INamingClient" name="GetService" />

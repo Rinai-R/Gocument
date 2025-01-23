@@ -5,28 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/DataBase/dao/Alter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/User/Api/Alter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/code" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document_grpc.pb.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/Document/Api/Browse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/Document/Client/DocumentClient.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/Document/Client/rpc/document.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/code" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/conf/DB/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/dao/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/User/dao/Alter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/dao/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/User/dao/LoginAndRegister.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Error/Error.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/Error.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Rsp/Rsp.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Rsp/Rsp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Middleware/Token.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Middleware/Token.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Middleware/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Middleware/jwt.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Api/Login.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/User/Api/Login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Api/Register.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/User/Api/Register.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/User/Client/rpc/user.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/User/Client/rpc/user.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/User/Client/rpc/user_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Api/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Alter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Api/Login.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Api/Register.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Register.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Client/UserClient.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/UserClient.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/code" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/Document/Client/rpc/code" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,45 +81,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build init.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/New/project/Gocument/Gocument/Server/User&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor": "Run",
+    "Go 构建.go build init.go.executor": "Run",
+    "Go 构建.go build main.go (1).executor": "Run",
+    "Go 构建.go build main.go (2).executor": "Run",
+    "Go 构建.go build main.go.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/New/project/Gocument/Gocument/Server/Document",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;redis&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\New\project\Gocument\Gocument\Server\Document" />
+      <recent name="D:\New\project\Gocument\Gocument\Server" />
+      <recent name="D:\New\project\Gocument\Gocument\app\Func\Document\Client\rpc" />
       <recent name="D:\New\project\Gocument\Gocument\Server\User" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\New\project\Gocument\Gocument\DataBase\User" />
+      <recent name="D:\New\project\Gocument\Gocument\DataBase\dao\user" />
+      <recent name="D:\New\project\Gocument\Gocument\app\Func" />
       <recent name="D:\New\project\Gocument\Gocument" />
       <recent name="D:\New\project\Gocument\Gocument\Utils\Error\ErrCode" />
-      <recent name="D:\New\project\Gocument\Gocument\Dao" />
-      <recent name="D:\New\project\Gocument\Gocument\app\conf\DB" />
-      <recent name="D:\New\project\Gocument\Gocument\app\DB" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -116,7 +133,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build github.com/Rinai-R/Gocument/Server/User">
+  <component name="RunManager" selected="Go 构建.go build main.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -135,15 +152,6 @@
       <filePath value="$PROJECT_DIR$/app/User/Api/Register.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build UserClient.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Gocument" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="github.com/Rinai-R/Gocument" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/app/User/Client/UserClient.go" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build github.com/Rinai-R/Gocument/Server/User" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -159,6 +167,15 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Server/User/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Gocument" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/Rinai-R/Gocument" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Server/Document/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -181,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/User" />
         <item itemvalue="Go 构建.go build main.go" />
+        <item itemvalue="Go 构建.go build main.go (2)" />
+        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/User" />
         <item itemvalue="Go 构建.go build main.go (1)" />
         <item itemvalue="Go 构建.go build Register.go" />
-        <item itemvalue="Go 构建.go build UserClient.go" />
       </list>
     </recent_temporary>
   </component>
