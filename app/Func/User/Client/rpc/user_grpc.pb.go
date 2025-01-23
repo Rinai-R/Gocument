@@ -19,9 +19,10 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	User_Register_FullMethodName = "/User/Register"
-	User_Login_FullMethodName    = "/User/Login"
-	User_Alter_FullMethodName    = "/User/Alter"
+	User_Register_FullMethodName     = "/User/Register"
+	User_Login_FullMethodName        = "/User/Login"
+	User_Alter_FullMethodName        = "/User/Alter"
+	User_PersonalPage_FullMethodName = "/User/PersonalPage"
 )
 
 // UserClient is the client API for User service.
@@ -31,6 +32,7 @@ type UserClient interface {
 	Register(ctx context.Context, in *RegisterRequest, opts ...grpc.CallOption) (*RegisterResponse, error)
 	Login(ctx context.Context, in *LoginRequest, opts ...grpc.CallOption) (*LoginResponse, error)
 	Alter(ctx context.Context, in *AlterRequest, opts ...grpc.CallOption) (*AlterResponse, error)
+	PersonalPage(ctx context.Context, in *PersonalPageRequest, opts ...grpc.CallOption) (*PersonalPageResponse, error)
 }
 
 type userClient struct {
@@ -71,6 +73,16 @@ func (c *userClient) Alter(ctx context.Context, in *AlterRequest, opts ...grpc.C
 	return out, nil
 }
 
+func (c *userClient) PersonalPage(ctx context.Context, in *PersonalPageRequest, opts ...grpc.CallOption) (*PersonalPageResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(PersonalPageResponse)
+	err := c.cc.Invoke(ctx, User_PersonalPage_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // UserServer is the server API for User service.
 // All implementations must embed UnimplementedUserServer
 // for forward compatibility.
@@ -78,6 +90,7 @@ type UserServer interface {
 	Register(context.Context, *RegisterRequest) (*RegisterResponse, error)
 	Login(context.Context, *LoginRequest) (*LoginResponse, error)
 	Alter(context.Context, *AlterRequest) (*AlterResponse, error)
+	PersonalPage(context.Context, *PersonalPageRequest) (*PersonalPageResponse, error)
 	mustEmbedUnimplementedUserServer()
 }
 
@@ -96,6 +109,9 @@ func (UnimplementedUserServer) Login(context.Context, *LoginRequest) (*LoginResp
 }
 func (UnimplementedUserServer) Alter(context.Context, *AlterRequest) (*AlterResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Alter not implemented")
+}
+func (UnimplementedUserServer) PersonalPage(context.Context, *PersonalPageRequest) (*PersonalPageResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method PersonalPage not implemented")
 }
 func (UnimplementedUserServer) mustEmbedUnimplementedUserServer() {}
 func (UnimplementedUserServer) testEmbeddedByValue()              {}
@@ -172,6 +188,24 @@ func _User_Alter_Handler(srv interface{}, ctx context.Context, dec func(interfac
 	return interceptor(ctx, in, info, handler)
 }
 
+func _User_PersonalPage_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(PersonalPageRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(UserServer).PersonalPage(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: User_PersonalPage_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(UserServer).PersonalPage(ctx, req.(*PersonalPageRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // User_ServiceDesc is the grpc.ServiceDesc for User service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -190,6 +224,10 @@ var User_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Alter",
 			Handler:    _User_Alter_Handler,
+		},
+		{
+			MethodName: "PersonalPage",
+			Handler:    _User_PersonalPage_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

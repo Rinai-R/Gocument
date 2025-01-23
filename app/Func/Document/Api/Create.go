@@ -28,9 +28,8 @@ func CreateDocument(c context.Context, ctx *app.RequestContext) {
 		ctx.JSON(http.StatusBadRequest, Rsp.BindErr(err))
 		return
 	}
-	Document.Username = GetName.(string)
 	res, _ := Client.DocumentClient.Create(c, &pb.CreateRequest{
-		Username:  Document.Username,
+		Username:  GetName.(string),
 		Title:     Document.Title,
 		IsPrivate: Document.IsPrivate,
 	})

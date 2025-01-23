@@ -13,8 +13,15 @@ type DocumentServer struct {
 }
 
 func (*DocumentServer) Create(ctx context.Context, req *pb.CreateRequest) (*pb.CreateResponse, error) {
+	Id, err := dao.GetId(req.Username)
+	if err != nil {
+		return &pb.CreateResponse{
+			Code: int64(ErrCode.InternalErr),
+			Msg:  err.Error(),
+		}, nil
+	}
 	Document := models.Document{
-		Username:  req.Username,
+		UserId:    Id,
 		Title:     req.Title,
 		IsPrivate: req.IsPrivate,
 	}

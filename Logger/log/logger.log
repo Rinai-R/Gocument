@@ -1,44 +1,44 @@
-2025-01-23T19:31:00.365+0800	DEBUG	解析token成功
-2025-01-23T19:31:00.383+0800	DEBUG	Document created
-2025-01-23T19:31:00.384+0800	DEBUG	Create Document OK
-2025-01-23T19:32:44.824+0800	DEBUG	解析token成功
-2025-01-23T19:32:44.832+0800	DEBUG	Document created
-2025-01-23T19:32:44.833+0800	DEBUG	Create Document OK
-2025-01-23T19:33:00.516+0800	DEBUG	解析token成功
-2025-01-23T19:33:00.521+0800	DEBUG	Document created
-2025-01-23T19:33:00.522+0800	DEBUG	Create Document OK
-2025-01-23T19:33:12.659+0800	DEBUG	解析token成功
-2025-01-23T19:33:12.707+0800	DEBUG	Document created
-2025-01-23T19:33:12.707+0800	DEBUG	Create Document OK
-2025-01-23T19:34:06.967+0800	DEBUG	Nacos init success
-2025-01-23T19:34:06.976+0800	DEBUG	Client: Document client OK
-2025-01-23T19:34:06.981+0800	DEBUG	Client: User client OK
-2025-01-23T19:34:09.821+0800	DEBUG	解析token成功
-2025-01-23T19:34:20.348+0800	DEBUG	解析token成功
-2025-01-23T19:36:02.639+0800	DEBUG	Nacos init success
-2025-01-23T19:36:02.646+0800	DEBUG	Client: Document client OK
-2025-01-23T19:36:02.648+0800	DEBUG	Client: User client OK
-2025-01-23T19:36:05.516+0800	DEBUG	解析token成功
-2025-01-23T19:36:48.849+0800	DEBUG	Nacos init success
-2025-01-23T19:36:48.857+0800	DEBUG	Client: Document client OK
-2025-01-23T19:36:48.864+0800	DEBUG	Client: User client OK
-2025-01-23T19:36:55.781+0800	DEBUG	解析token成功
-2025-01-23T19:37:18.707+0800	DEBUG	token is malformed: could not JSON decode header: invalid character '\b' in string literal
-2025-01-23T19:38:16.831+0800	DEBUG	token is malformed: could not JSON decode header: invalid character '\b' in string literal
-2025-01-23T19:38:37.908+0800	DEBUG	解析token成功
-2025-01-23T19:38:37.912+0800	DEBUG	Document created
-2025-01-23T19:38:37.912+0800	DEBUG	Create Document OK
-2025-01-23T19:39:53.857+0800	DEBUG	解析token成功
-2025-01-23T19:39:53.913+0800	DEBUG	API: AlterUserInfo ok
-2025-01-23T19:40:09.649+0800	DEBUG	解析token成功
-2025-01-23T19:40:09.649+0800	DEBUG	API: AlterUserInfo Request null
-2025-01-23T19:41:17.950+0800	DEBUG	DAO: Login OK 
-2025-01-23T19:41:17.950+0800	DEBUG	Service: User Success
-2025-01-23T19:41:17.951+0800	DEBUG	API: login ok
-2025-01-23T19:41:17.951+0800	DEBUG	产生token成功
-2025-01-23T19:41:50.229+0800	DEBUG	DAO: User Already ExistError 1062 (23000): Duplicate entry 'rinai1123' for key 'users.uni_users_username'
-2025-01-23T19:41:50.229+0800	DEBUG	Service: User Exists Error
-2025-01-23T19:41:50.231+0800	DEBUG	API: user name exists
-2025-01-23T19:41:53.944+0800	DEBUG	DAO: User Created Success
-2025-01-23T19:41:53.944+0800	DEBUG	Service: User Success
-2025-01-23T19:41:53.944+0800	DEBUG	API: register success
+2025-01-23T22:19:28.521+0800	DEBUG	Viper: OK
+2025-01-23T22:19:28.532+0800	DEBUG	Redis OK
+2025-01-23T22:19:28.568+0800	DEBUG	Mysql OK
+2025-01-23T22:19:28.570+0800	DEBUG	Elasticsearch Connected
+2025-01-23T22:19:28.572+0800	DEBUG	Elasticsearch OK
+2025-01-23T22:19:28.763+0800	DEBUG	Nacos init success
+2025-01-23T22:19:28.778+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T22:19:28.778+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-23T22:19:32.453+0800	DEBUG	解析token成功
+2025-01-23T22:19:32.456+0800	DEBUG	response generate ok
+2025-01-23T22:37:05.005+0800	DEBUG	Viper: OK
+2025-01-23T22:37:05.016+0800	DEBUG	Redis OK
+2025-01-23T22:37:05.052+0800	DEBUG	Mysql OK
+2025-01-23T22:37:05.054+0800	DEBUG	Elasticsearch Connected
+2025-01-23T22:37:05.056+0800	DEBUG	Elasticsearch OK
+2025-01-23T22:37:05.237+0800	DEBUG	Nacos init success
+2025-01-23T22:37:05.245+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T22:37:05.245+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-23T22:37:15.010+0800	DEBUG	Viper: OK
+2025-01-23T22:37:15.021+0800	DEBUG	Redis OK
+2025-01-23T22:37:15.064+0800	DEBUG	Mysql OK
+2025-01-23T22:37:15.068+0800	DEBUG	Elasticsearch Connected
+2025-01-23T22:37:15.070+0800	DEBUG	Elasticsearch OK
+2025-01-23T22:37:15.253+0800	DEBUG	Nacos init success
+2025-01-23T22:37:15.266+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T22:37:15.266+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-23T22:37:27.055+0800	DEBUG	Nacos init success
+2025-01-23T22:37:27.064+0800	DEBUG	Client: Document client OK
+2025-01-23T22:37:27.070+0800	DEBUG	Client: User client OK
+2025-01-23T22:37:31.856+0800	DEBUG	解析token成功
+2025-01-23T22:37:31.862+0800	DEBUG	response generate ok
+2025-01-23T22:42:36.171+0800	DEBUG	Viper: OK
+2025-01-23T22:42:36.183+0800	DEBUG	Redis OK
+2025-01-23T22:42:36.238+0800	DEBUG	Mysql OK
+2025-01-23T22:42:36.242+0800	DEBUG	Elasticsearch Connected
+2025-01-23T22:42:36.243+0800	DEBUG	Elasticsearch OK
+2025-01-23T22:42:36.428+0800	DEBUG	Nacos init success
+2025-01-23T22:42:36.433+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-23T22:42:36.433+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-23T22:42:50.193+0800	DEBUG	Nacos init success
+2025-01-23T22:42:50.201+0800	DEBUG	Client: Document client OK
+2025-01-23T22:42:50.208+0800	DEBUG	Client: User client OK
+2025-01-23T22:42:52.694+0800	DEBUG	解析token成功
+2025-01-23T22:42:52.697+0800	DEBUG	response generate ok

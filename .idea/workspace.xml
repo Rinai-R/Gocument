@@ -5,41 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/code" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/rpc/document_grpc.pb.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/Document/Api/Browse.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/Document/Client/DocumentClient.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/Document/Client/rpc/document.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/code" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/utils/Time.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Func/User/Api/PersonalPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/dao/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/User/dao/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/dao/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/User/dao/LoginAndRegister.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user_grpc.pb.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Api/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Api/Login.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Login.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Api/Register.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Api/Register.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/UserClient.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/UserClient.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/code" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/Document/Client/rpc/code" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User/Client/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user_grpc.pb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +84,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/New/project/Gocument/Gocument/Server/Document",
+    "last_opened_file_path": "D:/New/project/Gocument/Gocument/Server/User",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -113,10 +100,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\New\project\Gocument\Gocument\Server\User" />
       <recent name="D:\New\project\Gocument\Gocument\Server\Document" />
       <recent name="D:\New\project\Gocument\Gocument\Server" />
       <recent name="D:\New\project\Gocument\Gocument\app\Func\Document\Client\rpc" />
-      <recent name="D:\New\project\Gocument\Gocument\Server\User" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\New\project\Gocument\Gocument\DataBase\User" />
@@ -133,7 +120,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build main.go (2)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -199,8 +186,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go 构建.go build main.go" />
-        <item itemvalue="Go 构建.go build main.go (2)" />
         <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/User" />
+        <item itemvalue="Go 构建.go build main.go (2)" />
         <item itemvalue="Go 构建.go build main.go (1)" />
         <item itemvalue="Go 构建.go build Register.go" />
       </list>

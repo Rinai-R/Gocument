@@ -2,6 +2,10 @@ syntax="proto3";
 
 option go_package=".;pb";
 
+import "google/protobuf/timestamp.proto";
+
+
+//注册相关
 message RegisterRequest {
   string UserName = 1;
   string Password = 2;
@@ -12,6 +16,8 @@ message RegisterResponse {
   string Msg = 2;
 }
 
+
+//登陆相关
 message LoginRequest {
   string UserName = 1;
   string Password = 2;
@@ -22,6 +28,8 @@ message LoginResponse {
   string Msg = 2;
 }
 
+
+//修改用户信息
 message AlterRequest {
   string Username = 1;
   string Password = 2;
@@ -35,8 +43,41 @@ message AlterResponse {
   string Msg = 2;
 }
 
+
+//查看个人主页
+message PersonalPageRequest {
+  string Username = 1;
+}
+
+message Do {
+  int64 Id = 1;
+  string Title = 2;
+  bool IsPrivate = 3;
+  google.protobuf.Timestamp CreateAt = 4;
+  google.protobuf.Timestamp UpdatedAt = 5;
+}
+
+message UserInfo {
+  int64 Id = 1;
+  string Username = 2;
+  string Avatar = 3;
+  string Bio = 4;
+  string Gender = 5;
+  google.protobuf.Timestamp CreatedAt = 6;
+  google.protobuf.Timestamp UpdatedAt = 7;
+  repeated Do Documents = 8;
+}
+
+message PersonalPageResponse {
+  int64 Code = 1;
+  string Msg = 2;
+  UserInfo User = 3;
+}
+
+
 service User {
   rpc Register(RegisterRequest) returns(RegisterResponse);
   rpc Login(LoginRequest) returns(LoginResponse);
   rpc Alter(AlterRequest) returns(AlterResponse);
+  rpc PersonalPage(PersonalPageRequest) returns(PersonalPageResponse);
 }
