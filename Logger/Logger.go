@@ -8,8 +8,8 @@ import (
 
 var Logger *zap.Logger
 
-func InitLogger() {
-	file, _ := os.Create("./Logger/log/logger.log")
+func init() {
+	file, _ := os.OpenFile("./Logger/log/logger.log", os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
 	writerSyncer := zapcore.AddSync(file)
 	encoder := zapcore.NewConsoleEncoder(zap.NewDevelopmentEncoderConfig())
 	core := zapcore.NewCore(encoder, writerSyncer, zapcore.DebugLevel)

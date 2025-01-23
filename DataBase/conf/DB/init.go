@@ -3,6 +3,7 @@ package conf
 import (
 	"github.com/Rinai-R/Gocument/DataBase/DB/MySQL"
 	"github.com/Rinai-R/Gocument/DataBase/DB/Redis"
+	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/spf13/viper"
 )
 
@@ -19,11 +20,11 @@ func init() {
 	viper.SetConfigFile("./DataBase/conf/DB/db.yaml")
 	err := viper.ReadInConfig()
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic("Viper: " + err.Error())
 	}
 	err = viper.Unmarshal(&DB)
 	if err != nil {
-		panic(err)
+		Logger.Logger.Panic("Viper: " + err.Error())
 	}
 
 }

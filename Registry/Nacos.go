@@ -29,7 +29,7 @@ func init() {
 		constant.WithCacheDir("/tmp/nacos/cache"),                        // 缓存目录
 		constant.WithLogLevel("debug"),                                   // 日志级别
 		constant.WithUsername("nacos"),                                   // 用户名
-		constant.WithPassword("nacos"),                                   // 密码
+		constant.WithPassword("nacos"),                               // 密码
 	)
 	var err error
 	// 创建配置客户端
@@ -43,7 +43,5 @@ func init() {
 	if err != nil {
 		Logger.Logger.Panic(err.Error()) // 如果客户端创建失败，则抛出异常
 	}
-
 	Logger.Logger.Debug("Nacos init success")
-
 }

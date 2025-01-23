@@ -1,7 +1,7 @@
 MySQL:
   Addr: "192.168.195.129:3306"
   UserName: "root"
-  Password: "123465"
+  Password: "123456"
   DBName: "test"
 
 Redis:

@@ -29,23 +29,23 @@ func Register(c context.Context, ctx *app.RequestContext) {
 	fmt.Println(res)
 	switch int(res.Code) {
 	case ErrCode.OK:
-		Logger.Logger.Info("API: register success")
+		Logger.Logger.Debug("API: register success")
 		ctx.JSON(http.StatusOK, Rsp.Success(nil))
 		break
 	case ErrCode.UserNameLengthError:
-		Logger.Logger.Info("API: user name length error")
+		Logger.Logger.Debug("API: user name length error")
 		ctx.JSON(http.StatusBadRequest, Rsp.UserNameLengthErr(Error.ErrName))
 		break
 	case ErrCode.PasswordLengthError:
-		Logger.Logger.Info("API: password length error")
+		Logger.Logger.Debug("API: password length error")
 		ctx.JSON(http.StatusBadRequest, Rsp.PasswordLengthErr(Error.ErrpasswordLen))
 		break
 	case ErrCode.UserNameExists:
-		Logger.Logger.Info("API: user name exists")
+		Logger.Logger.Debug("API: user name exists")
 		ctx.JSON(http.StatusBadRequest, Rsp.UserNameExistsErr(Error.UserExists))
 		break
 	default:
-		Logger.Logger.Error("API: InternalError")
+		Logger.Logger.Debug("API: InternalError")
 		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(Error.InternalError))
 		break
 	}

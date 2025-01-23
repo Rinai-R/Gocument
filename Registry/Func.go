@@ -15,7 +15,7 @@ func RegisterServiceInstance(client naming_client.INamingClient, param vo.Regist
 		Logger.Logger.Panic("RegisterServiceInstance failed!" + err.Error())
 	}
 	// 打印注册参数和结果
-	msg := fmt.Sprintf("RegisterServiceInstance,param:%+v,result:%+v \n\n", param, success)
+	msg := fmt.Sprintf("RegisterServiceInstance,param:%+v,result:%+v", param, success)
 	Logger.Logger.Debug(msg)
 }
 
@@ -27,6 +27,6 @@ func DeRegisterServiceInstance(client naming_client.INamingClient, param vo.Dere
 		panic("DeRegisterServiceInstance failed!" + err.Error())
 	}
 	// 打印取消注册参数和结果
-	msg := fmt.Sprintf("DeRegisterServiceInstance,param:%+v,result:%+v \n\n", param, success)
+	msg := fmt.Sprintf("DeRegisterServiceInstance,param:%+v,result:%+v", param, success)
 	Logger.Logger.Debug(msg)
 }
