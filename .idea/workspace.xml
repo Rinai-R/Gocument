@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/utils/Time.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Func/User/Api/PersonalPage.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user_grpc.pb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/Document/Api/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/app/Func/User/Client/rpc/user.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Func/User/Client/rpc/user_grpc.pb.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/Router/router.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/utils/Time.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/utils/Time.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,36 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor": "Run",
-    "Go 构建.go build init.go.executor": "Run",
-    "Go 构建.go build main.go (1).executor": "Run",
-    "Go 构建.go build main.go (2).executor": "Run",
-    "Go 构建.go build main.go.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "D:/New/project/Gocument/Gocument/Server/User",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build init.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build main.go (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build main.go (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/New/project/Gocument/Gocument/Server/User&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "redis",
-      "mongo"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;redis&quot;,
+      &quot;mongo&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\New\project\Gocument\Gocument\Server\User" />

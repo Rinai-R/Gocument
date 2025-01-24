@@ -12,6 +12,8 @@ func TimestampToTime(rsp *pb.PersonalPageResponse) (*models.User, bool) {
 		Bio:      rsp.User.Bio,
 		Gender:   rsp.User.Gender,
 		Avatar:   rsp.User.Avatar,
+		CreatedAt: rsp.User.CreatedAt.AsTime(),
+		UpdatedAt: rsp.User.UpdatedAt.AsTime(),
 	}
 	var documents []models.Document
 	for _, d := range rsp.User.Documents {

@@ -3,7 +3,7 @@ package models
 import "time"
 
 type Document struct {
-	Id         int       `json:"omitempty" gorm:"int;primaryKey;autoIncrement"`
+	Id         int       `json:"id,omitempty" gorm:"int;primaryKey;autoIncrement"`
 	UserId     int       `json:"user_id,omitempty" gorm:"int;not null;index:idx_user_id"`
 	Title      string    `json:"title,omitempty" gorm:"varchar(50)not null"`
 	IsPrivate  bool      `json:"is_private,omitempty" gorm:"not null"`
