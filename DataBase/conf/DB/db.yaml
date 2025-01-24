@@ -12,3 +12,4 @@ Redis:
 
 ElasticSearch:
   Addr: "http://192.168.195.129:9200"
+  IndexName: "documents"

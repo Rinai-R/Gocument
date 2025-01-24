@@ -8,7 +8,7 @@ type User struct {
 	Password  string     `json:"password,omitempty" gorm:"not null;index:idx_name_pass"`
 	Bio       string     `json:"bio,omitempty" gorm:"varchar(255);default:'这里填写个人简介'"`
 	Gender    string     `json:"gender,omitempty" gorm:"varchar(50);default:'武装直升机'"`
-	Avatar    string     `json:"avatar,omitempty" gorm:"varchar(255);efault:'https://www.默认头像.com'"`
+	Avatar    string     `json:"avatar,omitempty" gorm:"varchar(255);default:'https://www.默认头像.com'"`
 	Documents []Document `json:"documents,omitempty" gorm:"foreignKey:UserId"`
 	CreatedAt time.Time  `json:"created_at,omitempty" gorm:"autoCreateTime"`
 	UpdatedAt time.Time  `json:"updated_at,omitempty" gorm:"autoUpdateTime"`

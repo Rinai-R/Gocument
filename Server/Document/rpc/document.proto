@@ -13,7 +13,18 @@ message CreateResponse {
   string Msg = 2;
 }
 
+message DeleteRequest {
+  int64 Id = 1;
+  string username = 2;
+}
+
+message DeleteResponse {
+  int64 Code = 1;
+  string Msg = 2;
+}
+
 
 service Document {
   rpc Create(CreateRequest) returns(CreateResponse);
+  rpc Delete(DeleteRequest) returns(DeleteResponse);
 }

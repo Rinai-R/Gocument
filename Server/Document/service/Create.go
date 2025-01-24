@@ -26,7 +26,7 @@ func (*DocumentServer) Create(ctx context.Context, req *pb.CreateRequest) (*pb.C
 		IsPrivate: req.IsPrivate,
 	}
 
-	if err := dao.Create(Document); err != nil {
+	if err := dao.Create(ctx, Document); err != nil {
 		return &pb.CreateResponse{
 			Code: int64(ErrCode.InternalErr),
 			Msg:  err.Error(),

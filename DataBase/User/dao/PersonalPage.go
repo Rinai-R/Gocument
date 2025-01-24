@@ -7,7 +7,7 @@ import (
 	"github.com/Rinai-R/Gocument/models"
 )
 
-func PersonalPage(c context.Context, user *models.User) error {
+func PersonalPage(_ context.Context, user *models.User) error {
 	//key := fmt.Sprintf("u:" + user.Username)
 	//if res, err := DB.Rdb.HGetAll(c, key).Result(); err == nil {
 	//	if err = mapstructure.Decode(res, &user); err == nil {

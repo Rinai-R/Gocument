@@ -1,6 +1,7 @@
 package Rsp
 
 import (
+	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
 )
 
@@ -23,14 +24,14 @@ func BindErr(data interface{}) Rsp {
 func UserNameLengthErr(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.UserNameLengthError,
-		Info: "UserNameLengthError",
+		Info: Error.ErrName.Error(),
 		Data: data,
 	}
 }
 func PasswordLengthErr(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.PasswordLengthError,
-		Info: "PasswordLengthError",
+		Info: Error.ErrpasswordLen.Error(),
 		Data: data,
 	}
 }
@@ -38,14 +39,14 @@ func PasswordLengthErr(data interface{}) Rsp {
 func UsernameOrPassword(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.UsernameOrPassword,
-		Info: "UsernameOrPasswordError",
+		Info: Error.UsernameOrPassword.Error(),
 		Data: data,
 	}
 }
 func UserNameExistsErr(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.UserNameExists,
-		Info: "UserNameExists",
+		Info: Error.UserExists.Error(),
 		Data: data,
 	}
 }
@@ -53,7 +54,7 @@ func UserNameExistsErr(data interface{}) Rsp {
 func InternalError(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.InternalErr,
-		Info: "InternalError",
+		Info: Error.InternalError.Error(),
 		Data: data,
 	}
 }
@@ -61,7 +62,7 @@ func InternalError(data interface{}) Rsp {
 func TokenError(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.TokenError,
-		Info: "TokenError",
+		Info: Error.TokenError.Error(),
 		Data: data,
 	}
 }
@@ -69,7 +70,7 @@ func TokenError(data interface{}) Rsp {
 func RequestNull(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.RequestNull,
-		Info: "RequestNull",
+		Info: Error.RequestNull.Error(),
 		Data: data,
 	}
 }
@@ -77,7 +78,15 @@ func RequestNull(data interface{}) Rsp {
 func UserNotExists(data interface{}) Rsp {
 	return Rsp{
 		Code: ErrCode.UserNotExists,
-		Info: "UserNotExists",
+		Info: Error.UserExists.Error(),
+		Data: data,
+	}
+}
+
+func NoDocumentFoundWithToken(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.NoDocumentFoundWithToken,
+		Info: Error.NoDocumentFoundWithToken.Error(),
 		Data: data,
 	}
 }

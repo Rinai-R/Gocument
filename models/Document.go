@@ -11,6 +11,12 @@ type Document struct {
 	UpdateTime time.Time `json:"update_time,omitempty" gorm:"autoUpdateTime;not null"`
 }
 
+type ElasticDocument struct {
+	Id      string `json:"id,omitempty"`
+	Title   string `json:"user_id,omitempty"`
+	Content string `json:"content,omitempty"`
+}
+
 var EsDocument string
 
 func init() {

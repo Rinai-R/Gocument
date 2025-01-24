@@ -1,5 +1,6 @@
 package ElasticSearch
 
 type ElasticSearch struct {
-	Addr string
+	Addr      string
+	IndexName string
 }

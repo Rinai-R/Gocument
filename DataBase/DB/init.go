@@ -45,7 +45,7 @@ func init() {
 
 	//ElasticSearch连接及其初始化
 	ES, err = elastic.NewClient(
-		elastic.SetURL("http://192.168.195.129:9200"),
+		elastic.SetURL(conf.DB.ElasticSearch.Addr),
 		elastic.SetSniff(false),       // 禁用嗅探
 		elastic.SetHealthcheck(false), // 禁用健康检查
 	)
@@ -55,13 +55,13 @@ func init() {
 	}
 
 	// 检查连接是否成功
-	_, _, err = ES.Ping("http://192.168.195.129:9200/").Do(context.Background())
+	_, _, err = ES.Ping(conf.DB.ElasticSearch.Addr).Do(context.Background())
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "elastic connect fail")
 	}
 	Logger.Logger.Debug("Elasticsearch Connected")
 
-	IndexName := "documents"
+	IndexName := conf.DB.ElasticSearch.IndexName
 	exists, err := ES.IndexExists(IndexName).Do(context.Background())
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + " Document Exists Request Error")

@@ -29,6 +29,8 @@ func InitRouter() {
 
 		DocumentGroup.POST("/create", DApi.CreateDocument)
 
+		DocumentGroup.DELETE("/delete", DApi.DeleteDocument)
+
 	}
 
 	r.Spin()

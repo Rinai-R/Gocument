@@ -1,6 +1,7 @@
 package conf
 
 import (
+	"github.com/Rinai-R/Gocument/DataBase/DB/ElasticSearch"
 	"github.com/Rinai-R/Gocument/DataBase/DB/MySQL"
 	"github.com/Rinai-R/Gocument/DataBase/DB/Redis"
 	"github.com/Rinai-R/Gocument/Logger"
@@ -10,6 +11,7 @@ import (
 type DBConfig struct {
 	MySQL.MySQL
 	Redis.Redis
+	ElasticSearch.ElasticSearch
 }
 
 var DB *DBConfig
