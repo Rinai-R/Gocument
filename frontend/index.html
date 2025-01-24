@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Editor</title>
+    <style>
+        #document-content {
+            width: 100%;
+            height: 400px;
+            font-size: 16px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<textarea id="document-content" placeholder="在这里输入文档内容..."></textarea>
+<script>
+    const documentID = '1'; // 假设文档ID为1
+    const ws = new WebSocket(`ws://localhost:8080/ws/document?document_id=${documentID}`);
+
+    let saveInterval;
+
+    ws.onopen = function() {
+        console.log('WebSocket connection established');
+    };
+
+    ws.onmessage = function(event) {
+        const data = JSON.parse(event.data);
+        if (data.error) {
+            console.error(data.error);
+        } else {
+            // 填充输入框内容
+            document.getElementById('document-content').value = data.content;
+
+            // 清除已有的保存定时器，以防重复设置
+            if (saveInterval) clearInterval(saveInterval);
+
+            // 定期保存内容，这里设置为每5秒
+            saveInterval = setInterval(saveDocument, 5000);
+        }
+    };
+
+    ws.onclose = function() {
+        console.log('WebSocket connection closed');
+        // 在连接关闭时清除定时器
+        if (saveInterval) clearInterval(saveInterval);
+    };
+
+    function saveDocument() {
+        const content = document.getElementById('document-content').value;
+
+        // 可在这里调用API或WebSocket发送保存请求，此处为演示
+        console.log("Saving document content:", content);
+
+        // 示例保存请求，可以替换成实际的API调用
+        fetch(`http://localhost:8888/documents/${documentID}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ content: content })
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('保存失败');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log("Document saved successfully:", data);
+            })
+            .catch(error => {
+                console.error("Error saving document:", error);
+            });
+    }
+</script>
+</body>
+</html>

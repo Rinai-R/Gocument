@@ -2,6 +2,7 @@ syntax="proto3";
 
 option go_package=".;pb";
 
+//创建文档请求
 message CreateRequest {
   string Username = 1;
   string Title = 2;
@@ -13,6 +14,7 @@ message CreateResponse {
   string Msg = 2;
 }
 
+//删除文档请求
 message DeleteRequest {
   int64 Id = 1;
   string username = 2;
@@ -23,8 +25,21 @@ message DeleteResponse {
   string Msg = 2;
 }
 
+//检查用户权限并分级的请求
+message CheckPermissionRequest {
+  string Username = 1;
+  int64 DocumentId = 2;
+}
+
+message CheckPermissionResponse {
+  int64 Code = 1;
+  string Msg = 2;
+  string Res = 3;
+}
+
 
 service Document {
   rpc Create(CreateRequest) returns(CreateResponse);
   rpc Delete(DeleteRequest) returns(DeleteResponse);
+  rpc Check(CheckPermissionRequest) returns(CheckPermissionResponse);
 }

@@ -90,3 +90,19 @@ func NoDocumentFoundWithToken(data interface{}) Rsp {
 		Data: data,
 	}
 }
+
+func DocumentNotFound(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.DocumentNotFound,
+		Info: Error.DocumentNotFound.Error(),
+		Data: data,
+	}
+}
+
+func EnterForbidden(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.EnterForbidden,
+		Info: Error.EnterForbidden.Error(),
+		Data: data,
+	}
+}

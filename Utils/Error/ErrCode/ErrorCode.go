@@ -12,4 +12,6 @@ var (
 	RequestNull              = 40006
 	UserNotExists            = 40007
 	NoDocumentFoundWithToken = 40008
+	DocumentNotFound         = 40009
+	EnterForbidden           = 40010
 )

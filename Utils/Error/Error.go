@@ -12,4 +12,6 @@ var (
 	RequestNull              = errors.New("request is null")
 	UserNotExists            = errors.New("UserNotExists: user not exists")
 	NoDocumentFoundWithToken = errors.New("NoDocumentFoundWithToken: document not found with token")
+	DocumentNotFound         = errors.New("DocumentNotExists: document not exists")
+	EnterForbidden           = errors.New("EnterForbidden: you dose not have permission")
 )
