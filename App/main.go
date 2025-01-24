@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Rinai-R/Gocument/app/Router"
+	"github.com/Rinai-R/Gocument/App/Router"
 )
 
 func main() {

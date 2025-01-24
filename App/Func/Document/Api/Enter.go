@@ -5,6 +5,6 @@ import (
 	"github.com/cloudwego/hertz/pkg/app"
 )
 
-func BrowseDocument(c context.Context, ctx *app.RequestContext) {
+func Enter(c context.Context, ctx *app.RequestContext) {
 
 }

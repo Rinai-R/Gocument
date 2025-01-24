@@ -1,17 +1,17 @@
 package utils
 
 import (
-	pb "github.com/Rinai-R/Gocument/app/Func/User/Client/rpc"
+	pb "github.com/Rinai-R/Gocument/App/Func/User/Client/rpc"
 	"github.com/Rinai-R/Gocument/models"
 )
 
 func TimestampToTime(rsp *pb.PersonalPageResponse) (*models.User, bool) {
 	user := models.User{
-		Id:       rsp.User.Id,
-		Username: rsp.User.Username,
-		Bio:      rsp.User.Bio,
-		Gender:   rsp.User.Gender,
-		Avatar:   rsp.User.Avatar,
+		Id:        rsp.User.Id,
+		Username:  rsp.User.Username,
+		Bio:       rsp.User.Bio,
+		Gender:    rsp.User.Gender,
+		Avatar:    rsp.User.Avatar,
 		CreatedAt: rsp.User.CreatedAt.AsTime(),
 		UpdatedAt: rsp.User.UpdatedAt.AsTime(),
 	}

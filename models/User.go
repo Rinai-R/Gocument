@@ -2,6 +2,7 @@ package models
 
 import "time"
 
+// User 古希腊掌管用户信息的神
 type User struct {
 	Id        int64      `json:"id,omitempty" gorm:"primary_key;int;autoIncrement"`
 	Username  string     `json:"username,omitempty" gorm:"unique;not null;varchar(50);index:idx_name_pass"`

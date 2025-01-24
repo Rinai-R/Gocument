@@ -2,29 +2,29 @@ package Client
 
 import (
 	"fmt"
+	pb "github.com/Rinai-R/Gocument/App/Func/Document/Client/rpc"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Registry"
-	"github.com/Rinai-R/Gocument/app/Func/User/Client/rpc"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
 
 var (
-	UserClient pb.UserClient
-	UserConn   *grpc.ClientConn
+	DocumentClient pb.DocumentClient
+	DocumentConn   *grpc.ClientConn
 )
 
 func init() {
-
 	param := vo.GetServiceParam{
 		Clusters:    []string{"cluster1"},
-		ServiceName: "User",
+		ServiceName: "Document",
 		GroupName:   "Gocument",
 	}
+
 	service, err := Registry.Client.GetService(param)
 	if err != nil {
-		Logger.Logger.Panic("Client " + err.Error())
+		Logger.Logger.Panic("Client: " + err.Error())
 	}
 
 	if len(service.Hosts) == 0 {
@@ -35,11 +35,10 @@ func init() {
 
 	opt := grpc.WithTransportCredentials(insecure.NewCredentials())
 
-	UserConn, err = grpc.Dial(addr, opt)
+	DocumentConn, err = grpc.Dial(addr, opt)
 	if err != nil {
 		Logger.Logger.Panic("Client: " + err.Error())
 	}
-	UserClient = pb.NewUserClient(UserConn)
-
-	Logger.Logger.Debug("Client: User client OK")
+	DocumentClient = pb.NewDocumentClient(DocumentConn)
+	Logger.Logger.Debug("Client: Document client OK")
 }

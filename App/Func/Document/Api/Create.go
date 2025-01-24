@@ -2,11 +2,11 @@ package Api
 
 import (
 	"context"
+	"github.com/Rinai-R/Gocument/App/Func/Document/Client"
+	pb "github.com/Rinai-R/Gocument/App/Func/Document/Client/rpc"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
 	"github.com/Rinai-R/Gocument/Utils/Rsp"
-	"github.com/Rinai-R/Gocument/app/Func/Document/Client"
-	pb "github.com/Rinai-R/Gocument/app/Func/Document/Client/rpc"
 	"github.com/Rinai-R/Gocument/models"
 	"github.com/cloudwego/hertz/pkg/app"
 	"net/http"

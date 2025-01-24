@@ -40,6 +40,10 @@ func init() {
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "mysql Document migrate fail")
 	}
+	err = Db.AutoMigrate(models.Permission{})
+	if err != nil {
+		Logger.Logger.Panic(err.Error() + "mysql Document migrate fail")
+	}
 
 	Logger.Logger.Debug("Mysql OK")
 

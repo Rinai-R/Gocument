@@ -147,3 +147,81 @@
 2025-01-24T16:10:23.898+0800	DEBUG	Service: User Success
 2025-01-24T16:10:23.899+0800	DEBUG	API: login ok
 2025-01-24T16:10:23.899+0800	DEBUG	产生token成功
+2025-01-24T16:39:31.542+0800	DEBUG	Viper: OK
+2025-01-24T16:39:31.556+0800	DEBUG	Redis OK
+2025-01-24T16:39:31.609+0800	DEBUG	Mysql OK
+2025-01-24T16:39:31.614+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:39:31.616+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:39:31.716+0800	DEBUG	Viper: OK
+2025-01-24T16:39:31.731+0800	DEBUG	Redis OK
+2025-01-24T16:39:31.784+0800	DEBUG	Mysql OK
+2025-01-24T16:39:31.786+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:39:31.788+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:39:31.809+0800	DEBUG	Nacos init success
+2025-01-24T16:39:31.815+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:39:31.815+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-24T16:39:31.969+0800	DEBUG	Nacos init success
+2025-01-24T16:39:31.975+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:39:31.979+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-24T16:39:45.392+0800	DEBUG	Nacos init success
+2025-01-24T16:39:45.396+0800	DEBUG	Client: Document client OK
+2025-01-24T16:39:45.400+0800	DEBUG	Client: User client OK
+2025-01-24T16:40:58.041+0800	DEBUG	Nacos init success
+2025-01-24T16:40:58.045+0800	PANIC	Client: service host is empty
+2025-01-24T16:41:04.217+0800	DEBUG	Viper: OK
+2025-01-24T16:41:04.237+0800	DEBUG	Redis OK
+2025-01-24T16:41:04.396+0800	DEBUG	Mysql OK
+2025-01-24T16:41:04.400+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:41:04.402+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:41:04.593+0800	DEBUG	Nacos init success
+2025-01-24T16:41:04.597+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:41:04.597+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-24T16:41:07.383+0800	DEBUG	Viper: OK
+2025-01-24T16:41:07.396+0800	DEBUG	Redis OK
+2025-01-24T16:41:07.544+0800	DEBUG	Mysql OK
+2025-01-24T16:41:07.547+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:41:07.549+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:41:07.740+0800	DEBUG	Nacos init success
+2025-01-24T16:41:07.745+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:41:07.745+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-24T16:41:08.218+0800	DEBUG	Nacos init success
+2025-01-24T16:41:08.227+0800	DEBUG	Client: Document client OK
+2025-01-24T16:41:08.230+0800	DEBUG	Client: User client OK
+2025-01-24T16:52:35.023+0800	DEBUG	Viper: OK
+2025-01-24T16:52:35.039+0800	DEBUG	Redis OK
+2025-01-24T16:52:35.177+0800	DEBUG	Mysql OK
+2025-01-24T16:52:35.179+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:52:35.180+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:52:35.365+0800	DEBUG	Nacos init success
+2025-01-24T16:52:35.369+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:52:35.369+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-24T16:52:37.766+0800	DEBUG	Viper: OK
+2025-01-24T16:52:37.799+0800	DEBUG	Redis OK
+2025-01-24T16:52:37.919+0800	DEBUG	Mysql OK
+2025-01-24T16:52:37.922+0800	DEBUG	Elasticsearch Connected
+2025-01-24T16:52:37.924+0800	DEBUG	Elasticsearch OK
+2025-01-24T16:52:38.104+0800	DEBUG	Nacos init success
+2025-01-24T16:52:38.107+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T16:52:38.107+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-24T16:52:39.600+0800	DEBUG	Nacos init success
+2025-01-24T16:52:39.604+0800	DEBUG	Client: Document client OK
+2025-01-24T16:52:39.606+0800	DEBUG	Client: User client OK
+2025-01-24T17:01:49.043+0800	DEBUG	Viper: OK
+2025-01-24T17:01:49.057+0800	DEBUG	Redis OK
+2025-01-24T17:01:49.152+0800	DEBUG	Mysql OK
+2025-01-24T17:01:49.156+0800	DEBUG	Elasticsearch Connected
+2025-01-24T17:01:49.157+0800	DEBUG	Elasticsearch OK
+2025-01-24T17:01:49.201+0800	DEBUG	Viper: OK
+2025-01-24T17:01:49.223+0800	DEBUG	Redis OK
+2025-01-24T17:01:49.324+0800	DEBUG	Mysql OK
+2025-01-24T17:01:49.328+0800	DEBUG	Elasticsearch Connected
+2025-01-24T17:01:49.330+0800	DEBUG	Elasticsearch OK
+2025-01-24T17:01:49.358+0800	DEBUG	Nacos init success
+2025-01-24T17:01:49.363+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T17:01:49.363+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-24T17:01:49.516+0800	DEBUG	Nacos init success
+2025-01-24T17:01:49.523+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-24T17:01:49.523+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-24T17:01:51.740+0800	DEBUG	Nacos init success
+2025-01-24T17:01:51.747+0800	DEBUG	Client: Document client OK
+2025-01-24T17:01:51.749+0800	DEBUG	Client: User client OK
