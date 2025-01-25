@@ -1,4 +1,4 @@
-package Registry
+package Nacos
 
 import (
 	"fmt"

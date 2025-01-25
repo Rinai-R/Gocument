@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Registry"
+	"github.com/Rinai-R/Gocument/Registry/Nacos"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Server/User/service"
 	"github.com/nacos-group/nacos-sdk-go/v2/vo"
@@ -23,7 +24,7 @@ func main() {
 
 	pb.RegisterUserServer(grpcServer, &service.UserServer{})
 
-	Registry.RegisterServiceInstance(Registry.Client, vo.RegisterInstanceParam{
+	Nacos.RegisterServiceInstance(Registry.Client, vo.RegisterInstanceParam{
 		Ip:          "127.0.0.1",
 		Port:        10001,
 		ServiceName: "User",
@@ -50,7 +51,7 @@ func main() {
 			panic(err)
 		}
 	}(listener)
-	defer Registry.DeRegisterServiceInstance(Registry.Client, vo.DeregisterInstanceParam{
+	defer Nacos.DeRegisterServiceInstance(Registry.Client, vo.DeregisterInstanceParam{
 		Ip:          "127.0.0.1", // 根据实际情况填写
 		Port:        10001,       // gRPC服务的端口
 		Cluster:     "cluster1",

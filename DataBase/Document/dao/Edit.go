@@ -9,12 +9,20 @@ import (
 )
 
 func Edit(ctx context.Context, document models.ElasticDocument) error {
-	_, err := DB.ES.Update().
+	tx := DB.Db.Begin()
+	err := tx.Model(&models.Document{}).Where("id = ?", document.Id).Update("title", document.Title).Error
+	if err != nil {
+		tx.Rollback()
+		Logger.Logger.Error("Dao: MySQL update Error, " + err.Error())
+		return err
+	}
+	_, err = DB.ES.Update().
 		Index(conf.DB.ElasticSearch.IndexName).
 		Id(document.Id).
 		Doc(document).
 		Do(ctx)
 	if err != nil {
+		tx.Rollback()
 		Logger.Logger.Debug("ES Update Failed " + err.Error())
 		return err
 	}

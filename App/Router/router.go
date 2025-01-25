@@ -29,6 +29,8 @@ func InitRouter() {
 
 		DocumentGroup.POST("/create", DApi.CreateDocument)
 
+		DocumentGroup.PUT("/grant", DApi.Grant)
+
 		DocumentGroup.DELETE("/delete", DApi.DeleteDocument)
 
 		DocumentGroup.GET("/enter", DApi.Enter)

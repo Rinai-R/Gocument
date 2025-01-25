@@ -24,6 +24,7 @@ const (
 	Document_Check_FullMethodName  = "/Document/Check"
 	Document_Get_FullMethodName    = "/Document/Get"
 	Document_Edit_FullMethodName   = "/Document/Edit"
+	Document_Grant_FullMethodName  = "/Document/Grant"
 )
 
 // DocumentClient is the client API for Document service.
@@ -35,6 +36,7 @@ type DocumentClient interface {
 	Check(ctx context.Context, in *CheckPermissionRequest, opts ...grpc.CallOption) (*CheckPermissionResponse, error)
 	Get(ctx context.Context, in *GetDocumentRequest, opts ...grpc.CallOption) (*GetDocumentResponse, error)
 	Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error)
+	Grant(ctx context.Context, in *GrantRequest, opts ...grpc.CallOption) (*GrantResponse, error)
 }
 
 type documentClient struct {
@@ -95,6 +97,16 @@ func (c *documentClient) Edit(ctx context.Context, in *EditRequest, opts ...grpc
 	return out, nil
 }
 
+func (c *documentClient) Grant(ctx context.Context, in *GrantRequest, opts ...grpc.CallOption) (*GrantResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(GrantResponse)
+	err := c.cc.Invoke(ctx, Document_Grant_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // DocumentServer is the server API for Document service.
 // All implementations must embed UnimplementedDocumentServer
 // for forward compatibility.
@@ -104,6 +116,7 @@ type DocumentServer interface {
 	Check(context.Context, *CheckPermissionRequest) (*CheckPermissionResponse, error)
 	Get(context.Context, *GetDocumentRequest) (*GetDocumentResponse, error)
 	Edit(context.Context, *EditRequest) (*EditResponse, error)
+	Grant(context.Context, *GrantRequest) (*GrantResponse, error)
 	mustEmbedUnimplementedDocumentServer()
 }
 
@@ -128,6 +141,9 @@ func (UnimplementedDocumentServer) Get(context.Context, *GetDocumentRequest) (*G
 }
 func (UnimplementedDocumentServer) Edit(context.Context, *EditRequest) (*EditResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Edit not implemented")
+}
+func (UnimplementedDocumentServer) Grant(context.Context, *GrantRequest) (*GrantResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Grant not implemented")
 }
 func (UnimplementedDocumentServer) mustEmbedUnimplementedDocumentServer() {}
 func (UnimplementedDocumentServer) testEmbeddedByValue()                  {}
@@ -240,6 +256,24 @@ func _Document_Edit_Handler(srv interface{}, ctx context.Context, dec func(inter
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Document_Grant_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(GrantRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DocumentServer).Grant(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Document_Grant_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DocumentServer).Grant(ctx, req.(*GrantRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Document_ServiceDesc is the grpc.ServiceDesc for Document service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -266,6 +300,10 @@ var Document_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Edit",
 			Handler:    _Document_Edit_Handler,
+		},
+		{
+			MethodName: "Grant",
+			Handler:    _Document_Grant_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

@@ -106,3 +106,11 @@ func EnterForbidden(data interface{}) Rsp {
 		Data: data,
 	}
 }
+
+func GrantFailed(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.GrantFailed,
+		Info: Error.GrantFailed.Error(),
+		Data: data,
+	}
+}

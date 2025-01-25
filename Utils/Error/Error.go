@@ -14,4 +14,5 @@ var (
 	NoDocumentFoundWithToken = errors.New("NoDocumentFoundWithToken: document not found with token")
 	DocumentNotFound         = errors.New("DocumentNotExists: document not exists")
 	EnterForbidden           = errors.New("EnterForbidden: you dose not have permission")
+	GrantFailed              = errors.New("NotDocumentHost: maybe you are not document host")
 )

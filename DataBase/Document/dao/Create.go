@@ -17,6 +17,18 @@ func Create(ctx context.Context, document models.Document) error {
 		Logger.Logger.Debug("Dao: " + res.Error.Error() + " create failed")
 		return res.Error
 	}
+
+	res = tx.Model(models.Permission{}).Create(models.Permission{
+		DocumentId: document.Id,
+		UserId:     document.UserId,
+		Type:       true,
+	})
+	if res.Error != nil {
+		tx.Rollback()
+		Logger.Logger.Debug("Dao: Grant Error" + res.Error.Error())
+		return res.Error
+	}
+
 	//在es里面初始化文档数据
 	ESDocument := models.ElasticDocument{
 		Id:      strconv.Itoa(document.Id),

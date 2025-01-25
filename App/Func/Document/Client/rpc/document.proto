@@ -61,6 +61,18 @@ message EditResponse {
   string Msg = 2;
 }
 
+//赋予权限的请求
+message GrantRequest {
+  string host = 1;
+  int64 UserId = 2;
+  int64 DocumentId = 3;
+  bool Type = 4;
+}
+
+message GrantResponse {
+  int64 Code = 1;
+  string Msg = 2;
+}
 
 service Document {
   rpc Create(CreateRequest) returns(CreateResponse);
@@ -68,4 +80,5 @@ service Document {
   rpc Check(CheckPermissionRequest) returns(CheckPermissionResponse);
   rpc Get(GetDocumentRequest) returns(GetDocumentResponse);
   rpc Edit(EditRequest) returns(EditResponse);
+  rpc Grant(GrantRequest) returns(GrantResponse);
 }
