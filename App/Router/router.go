@@ -31,7 +31,7 @@ func InitRouter() {
 
 		DocumentGroup.DELETE("/delete", DApi.DeleteDocument)
 
-		DocumentGroup.PUT("/enter", DApi.Enter)
+		DocumentGroup.GET("/enter", DApi.Enter)
 	}
 
 	r.Spin()

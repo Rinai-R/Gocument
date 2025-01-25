@@ -3,78 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Editor</title>
+    <title>Document Viewer</title>
     <style>
-        #document-content {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
             width: 100%;
-            height: 400px;
-            font-size: 16px;
+            height: 200px;
+        }
+        input, button {
+            margin: 10px 0;
             padding: 10px;
-            box-sizing: border-box;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-<textarea id="document-content" placeholder="在这里输入文档内容..."></textarea>
+<h1>Document Viewer</h1>
+<input type="text" id="document-id" placeholder="Enter Document ID" />
+<input type="text" id="authorization" placeholder="Enter Authorization Token" />
+<button id="load-document">Load Document</button>
+<textarea id="document-content" readonly></textarea>
+
 <script>
-    const documentID = '1'; // 假设文档ID为1
-    const ws = new WebSocket(`ws://localhost:8080/ws/document?document_id=${documentID}`);
+    let socket;
 
-    let saveInterval;
+    document.getElementById('load-document').addEventListener('click', function() {
+        const documentID = document.getElementById('document-id').value;
+        const authToken = document.getElementById('authorization').value;
 
-    ws.onopen = function() {
-        console.log('WebSocket connection established');
-    };
-
-    ws.onmessage = function(event) {
-        const data = JSON.parse(event.data);
-        if (data.error) {
-            console.error(data.error);
-        } else {
-            // 填充输入框内容
-            document.getElementById('document-content').value = data.content;
-
-            // 清除已有的保存定时器，以防重复设置
-            if (saveInterval) clearInterval(saveInterval);
-
-            // 定期保存内容，这里设置为每5秒
-            saveInterval = setInterval(saveDocument, 5000);
+        if (!documentID || !authToken) {
+            alert("Please enter both Document ID and Authorization Token.");
+            return;
         }
-    };
 
-    ws.onclose = function() {
-        console.log('WebSocket connection closed');
-        // 在连接关闭时清除定时器
-        if (saveInterval) clearInterval(saveInterval);
-    };
+        // Close previously opened connection if it exists
+        if (socket) {
+            socket.close();
+        }
 
-    function saveDocument() {
-        const content = document.getElementById('document-content').value;
+        // Create WebSocket connection
+        socket = new WebSocket(`ws://localhost:8888/document/enter?document_id=${documentID}`);
 
-        // 可在这里调用API或WebSocket发送保存请求，此处为演示
-        console.log("Saving document content:", content);
+        socket.onopen = function() {
+            console.log('WebSocket connection established');
 
-        // 示例保存请求，可以替换成实际的API调用
-        fetch(`http://localhost:8888/documents/${documentID}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ content: content })
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('保存失败');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log("Document saved successfully:", data);
-            })
-            .catch(error => {
-                console.error("Error saving document:", error);
-            });
-    }
+            // Send authorization token after connection is established
+            const authMessage = JSON.stringify({ action: 'authenticate', token: authToken });
+            socket.send(authMessage);
+        };
+
+        socket.onmessage = function(event) {
+            const message = JSON.parse(event.data);
+            console.log("Received message:", message);
+
+            if (message.error) {
+                alert(`Error: ${message.error}`);
+            } else {
+                // Update document content in the textarea
+                const contentArea = document.getElementById('document-content');
+                contentArea.value = `Title: ${message.Title}\n\nContent: ${message.Content}`;
+            }
+        };
+
+        socket.onerror = function(error) {
+            console.error('WebSocket error:', error);
+            alert("An error occurred with the WebSocket connection.");
+        };
+
+        socket.onclose = function() {
+            console.log('WebSocket connection closed');
+        };
+    });
 </script>
 </body>
 </html>

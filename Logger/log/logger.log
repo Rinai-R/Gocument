@@ -1,36 +1,98 @@
-2025-01-24T20:57:25.741+0800	DEBUG	Viper: OK
-2025-01-24T20:57:25.753+0800	DEBUG	Redis OK
-2025-01-24T20:57:25.890+0800	DEBUG	Mysql OK
-2025-01-24T20:57:25.892+0800	DEBUG	Elasticsearch Connected
-2025-01-24T20:57:25.893+0800	DEBUG	Elasticsearch OK
-2025-01-24T20:57:26.082+0800	DEBUG	Nacos init success
-2025-01-24T20:57:26.086+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
-2025-01-24T20:57:26.086+0800	DEBUG	grpc server listening at 127.0.0.1:10002
-2025-01-24T20:58:04.405+0800	DEBUG	解析token成功
-2025-01-24T20:58:04.411+0800	DEBUG	Dao: document not found Error 1054 (42S22): Unknown column 'document_id' in 'where clause'
-2025-01-24T20:58:04.411+0800	DEBUG	Dao: Not Found
-2025-01-24T20:58:55.732+0800	DEBUG	Viper: OK
-2025-01-24T20:58:55.746+0800	DEBUG	Redis OK
-2025-01-24T20:58:55.911+0800	DEBUG	Mysql OK
-2025-01-24T20:58:55.922+0800	DEBUG	Elasticsearch Connected
-2025-01-24T20:58:55.924+0800	DEBUG	Elasticsearch OK
-2025-01-24T20:58:56.111+0800	DEBUG	Nacos init success
-2025-01-24T20:58:56.116+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
-2025-01-24T20:58:56.116+0800	DEBUG	grpc server listening at 127.0.0.1:10002
-2025-01-24T20:58:59.468+0800	DEBUG	解析token成功
-2025-01-24T20:58:59.471+0800	DEBUG	Dao: Internal Errorunsupported data type: 0xc000480819: Table not set, please set it like: db.Model(&user) or db.Table("users")
-2025-01-24T20:58:59.471+0800	DEBUG	Dao: Internal Errorunsupported data type: 0xc000480819: Table not set, please set it like: db.Model(&user) or db.Table("users")
-2025-01-24T21:00:23.037+0800	DEBUG	Viper: OK
-2025-01-24T21:00:23.048+0800	DEBUG	Redis OK
-2025-01-24T21:00:23.161+0800	DEBUG	Mysql OK
-2025-01-24T21:00:23.166+0800	DEBUG	Elasticsearch Connected
-2025-01-24T21:00:23.168+0800	DEBUG	Elasticsearch OK
-2025-01-24T21:00:23.360+0800	DEBUG	Nacos init success
-2025-01-24T21:00:23.379+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
-2025-01-24T21:00:23.379+0800	DEBUG	grpc server listening at 127.0.0.1:10002
-2025-01-24T21:00:25.297+0800	DEBUG	解析token成功
-2025-01-24T21:00:25.303+0800	DEBUG	Dao: it's private and you are not permitted
-2025-01-24T21:00:25.303+0800	DEBUG	Service: OK
-2025-01-24T21:02:16.522+0800	DEBUG	解析token成功
-2025-01-24T21:02:16.529+0800	DEBUG	Dao: Read And Write
-2025-01-24T21:02:16.529+0800	DEBUG	Service: OK
+2025-01-25T16:34:14.689+0800	DEBUG	解析token成功
+2025-01-25T16:34:19.735+0800	DEBUG	解析token成功
+2025-01-25T16:34:36.567+0800	DEBUG	DAO: Login OK 
+2025-01-25T16:34:36.568+0800	DEBUG	Service: User Success
+2025-01-25T16:34:36.569+0800	DEBUG	API: login ok
+2025-01-25T16:34:36.569+0800	DEBUG	产生token成功
+2025-01-25T16:34:54.117+0800	DEBUG	解析token成功
+2025-01-25T16:35:22.748+0800	DEBUG	Nacos init success
+2025-01-25T16:35:22.758+0800	DEBUG	Client: Document client OK
+2025-01-25T16:35:22.761+0800	DEBUG	Client: User client OK
+2025-01-25T16:35:25.001+0800	DEBUG	解析token成功
+2025-01-25T16:35:25.004+0800	DEBUG	Dao: Only Read
+2025-01-25T16:35:25.004+0800	DEBUG	Service: OK
+2025-01-25T16:35:25.007+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T16:39:16.597+0800	DEBUG	解析token成功
+2025-01-25T16:39:16.600+0800	DEBUG	Dao: document not found record not found
+2025-01-25T16:39:16.600+0800	DEBUG	Dao: Not Found
+2025-01-25T16:48:15.745+0800	DEBUG	Nacos init success
+2025-01-25T16:48:15.750+0800	DEBUG	Client: Document client OK
+2025-01-25T16:48:15.758+0800	DEBUG	Client: User client OK
+2025-01-25T16:48:33.981+0800	DEBUG	解析token成功
+2025-01-25T16:48:33.983+0800	DEBUG	Dao: document not found record not found
+2025-01-25T16:48:33.983+0800	DEBUG	Dao: Not Found
+2025-01-25T16:48:38.967+0800	DEBUG	解析token成功
+2025-01-25T16:48:38.970+0800	DEBUG	Dao: document not found record not found
+2025-01-25T16:48:38.970+0800	DEBUG	Dao: Not Found
+2025-01-25T16:48:50.086+0800	DEBUG	解析token成功
+2025-01-25T16:48:50.088+0800	DEBUG	Dao: document not found record not found
+2025-01-25T16:48:50.088+0800	DEBUG	Dao: Not Found
+2025-01-25T16:48:53.366+0800	DEBUG	解析token成功
+2025-01-25T16:48:53.370+0800	DEBUG	Dao: Only Read
+2025-01-25T16:48:53.370+0800	DEBUG	Service: OK
+2025-01-25T16:48:53.373+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T16:49:39.476+0800	DEBUG	解析token成功
+2025-01-25T16:49:53.301+0800	DEBUG	解析token成功
+2025-01-25T16:49:53.306+0800	DEBUG	Dao: Only Read
+2025-01-25T16:49:53.306+0800	DEBUG	Service: OK
+2025-01-25T16:49:53.308+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:06:56.839+0800	DEBUG	Nacos init success
+2025-01-25T17:06:56.848+0800	DEBUG	Client: Document client OK
+2025-01-25T17:06:56.852+0800	DEBUG	Client: User client OK
+2025-01-25T17:06:58.873+0800	DEBUG	解析token成功
+2025-01-25T17:06:58.877+0800	DEBUG	Dao: Only Read
+2025-01-25T17:06:58.877+0800	DEBUG	Service: OK
+2025-01-25T17:06:58.892+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:08:25.099+0800	DEBUG	Nacos init success
+2025-01-25T17:08:25.103+0800	DEBUG	Client: Document client OK
+2025-01-25T17:08:25.108+0800	DEBUG	Client: User client OK
+2025-01-25T17:08:30.016+0800	DEBUG	解析token成功
+2025-01-25T17:08:30.019+0800	DEBUG	Dao: Only Read
+2025-01-25T17:08:30.019+0800	DEBUG	Service: OK
+2025-01-25T17:08:30.026+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:08:37.784+0800	DEBUG	解析token成功
+2025-01-25T17:08:37.795+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:08:37.795+0800	DEBUG	Dao: Not Found
+2025-01-25T17:08:44.148+0800	DEBUG	解析token成功
+2025-01-25T17:08:44.159+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:08:44.159+0800	DEBUG	Dao: Not Found
+2025-01-25T17:08:49.285+0800	DEBUG	解析token成功
+2025-01-25T17:08:49.286+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:08:49.286+0800	DEBUG	Dao: Not Found
+2025-01-25T17:09:32.658+0800	DEBUG	Nacos init success
+2025-01-25T17:09:32.664+0800	DEBUG	Client: Document client OK
+2025-01-25T17:09:32.669+0800	DEBUG	Client: User client OK
+2025-01-25T17:09:33.804+0800	DEBUG	解析token成功
+2025-01-25T17:09:35.171+0800	DEBUG	解析token成功
+2025-01-25T17:09:38.651+0800	DEBUG	解析token成功
+2025-01-25T17:09:38.653+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:09:38.653+0800	DEBUG	Dao: Not Found
+2025-01-25T17:09:43.120+0800	DEBUG	解析token成功
+2025-01-25T17:09:43.121+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:09:43.121+0800	DEBUG	Dao: Not Found
+2025-01-25T17:10:33.720+0800	DEBUG	Nacos init success
+2025-01-25T17:10:33.726+0800	DEBUG	Client: Document client OK
+2025-01-25T17:10:33.730+0800	DEBUG	Client: User client OK
+2025-01-25T17:10:37.143+0800	DEBUG	解析token成功
+2025-01-25T17:10:37.145+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:10:37.145+0800	DEBUG	Dao: Not Found
+2025-01-25T17:11:50.865+0800	DEBUG	Nacos init success
+2025-01-25T17:11:50.873+0800	DEBUG	Client: Document client OK
+2025-01-25T17:11:50.878+0800	DEBUG	Client: User client OK
+2025-01-25T17:11:54.421+0800	DEBUG	解析token成功
+2025-01-25T17:11:54.423+0800	DEBUG	Dao: document not found record not found
+2025-01-25T17:11:54.423+0800	DEBUG	Dao: Not Found
+2025-01-25T17:11:58.315+0800	DEBUG	解析token成功
+2025-01-25T17:11:58.327+0800	DEBUG	Dao: Only Read
+2025-01-25T17:11:58.327+0800	DEBUG	Service: OK
+2025-01-25T17:11:58.330+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:03.337+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:08.339+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:13.341+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:18.344+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:23.346+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:28.348+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:33.349+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:38.350+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:43.353+0800	DEBUG	Dao: Bind Json Success 3
+2025-01-25T17:12:48.354+0800	DEBUG	Dao: Bind Json Success 3

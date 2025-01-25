@@ -37,9 +37,22 @@ message CheckPermissionResponse {
   string Res = 3;
 }
 
+//获取文档的内容
+message GetDocumentRequest {
+  int64 DocumentId = 1;
+}
+
+message GetDocumentResponse {
+  int64 Code = 1;
+  string Msg = 2;
+  string Title = 3;
+  string Content = 4;
+}
+
 
 service Document {
   rpc Create(CreateRequest) returns(CreateResponse);
   rpc Delete(DeleteRequest) returns(DeleteResponse);
   rpc Check(CheckPermissionRequest) returns(CheckPermissionResponse);
+  rpc Get(GetDocumentRequest) returns(GetDocumentResponse);
 }
