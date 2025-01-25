@@ -23,7 +23,7 @@ func (*DocumentServer) Get(ctx context.Context, req *pb.GetDocumentRequest) (*pb
 				Msg:  Error.DocumentNotFound.Error(),
 			}, nil
 		}
-		Logger.Logger.Error("Service: Internal Error", err)
+		Logger.Logger.Debug("Service: Internal Error" + err.Error())
 		return &pb.GetDocumentResponse{
 			Code: int64(ErrCode.InternalErr),
 			Msg:  err.Error(),

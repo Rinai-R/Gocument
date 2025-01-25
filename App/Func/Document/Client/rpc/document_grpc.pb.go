@@ -23,6 +23,7 @@ const (
 	Document_Delete_FullMethodName = "/Document/Delete"
 	Document_Check_FullMethodName  = "/Document/Check"
 	Document_Get_FullMethodName    = "/Document/Get"
+	Document_Edit_FullMethodName   = "/Document/Edit"
 )
 
 // DocumentClient is the client API for Document service.
@@ -33,6 +34,7 @@ type DocumentClient interface {
 	Delete(ctx context.Context, in *DeleteRequest, opts ...grpc.CallOption) (*DeleteResponse, error)
 	Check(ctx context.Context, in *CheckPermissionRequest, opts ...grpc.CallOption) (*CheckPermissionResponse, error)
 	Get(ctx context.Context, in *GetDocumentRequest, opts ...grpc.CallOption) (*GetDocumentResponse, error)
+	Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error)
 }
 
 type documentClient struct {
@@ -83,6 +85,16 @@ func (c *documentClient) Get(ctx context.Context, in *GetDocumentRequest, opts .
 	return out, nil
 }
 
+func (c *documentClient) Edit(ctx context.Context, in *EditRequest, opts ...grpc.CallOption) (*EditResponse, error) {
+	cOpts := append([]grpc.CallOption{grpc.StaticMethod()}, opts...)
+	out := new(EditResponse)
+	err := c.cc.Invoke(ctx, Document_Edit_FullMethodName, in, out, cOpts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // DocumentServer is the server API for Document service.
 // All implementations must embed UnimplementedDocumentServer
 // for forward compatibility.
@@ -91,6 +103,7 @@ type DocumentServer interface {
 	Delete(context.Context, *DeleteRequest) (*DeleteResponse, error)
 	Check(context.Context, *CheckPermissionRequest) (*CheckPermissionResponse, error)
 	Get(context.Context, *GetDocumentRequest) (*GetDocumentResponse, error)
+	Edit(context.Context, *EditRequest) (*EditResponse, error)
 	mustEmbedUnimplementedDocumentServer()
 }
 
@@ -112,6 +125,9 @@ func (UnimplementedDocumentServer) Check(context.Context, *CheckPermissionReques
 }
 func (UnimplementedDocumentServer) Get(context.Context, *GetDocumentRequest) (*GetDocumentResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method Get not implemented")
+}
+func (UnimplementedDocumentServer) Edit(context.Context, *EditRequest) (*EditResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method Edit not implemented")
 }
 func (UnimplementedDocumentServer) mustEmbedUnimplementedDocumentServer() {}
 func (UnimplementedDocumentServer) testEmbeddedByValue()                  {}
@@ -206,6 +222,24 @@ func _Document_Get_Handler(srv interface{}, ctx context.Context, dec func(interf
 	return interceptor(ctx, in, info, handler)
 }
 
+func _Document_Edit_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(EditRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(DocumentServer).Edit(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: Document_Edit_FullMethodName,
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(DocumentServer).Edit(ctx, req.(*EditRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 // Document_ServiceDesc is the grpc.ServiceDesc for Document service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
@@ -228,6 +262,10 @@ var Document_ServiceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "Get",
 			Handler:    _Document_Get_Handler,
+		},
+		{
+			MethodName: "Edit",
+			Handler:    _Document_Edit_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
