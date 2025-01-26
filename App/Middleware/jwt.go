@@ -40,5 +40,5 @@ func VerifyJWT(TokenString string) (string, error) {
 		Logger.Logger.Debug("解析token成功")
 		return message, nil
 	}
-	return "", Error.TokenError
+	return "", Error.TokenExpired
 }

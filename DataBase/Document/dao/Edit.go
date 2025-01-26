@@ -26,5 +26,6 @@ func Edit(ctx context.Context, document models.ElasticDocument) error {
 		Logger.Logger.Debug("ES Update Failed " + err.Error())
 		return err
 	}
+	tx.Commit()
 	return nil
 }

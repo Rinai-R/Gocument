@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"errors"
 	"github.com/Rinai-R/Gocument/DataBase/Document/dao"
 	"github.com/Rinai-R/Gocument/Logger"
 	pb "github.com/Rinai-R/Gocument/Server/Document/rpc"
@@ -16,7 +17,7 @@ func (*DocumentServer) Get(ctx context.Context, req *pb.GetDocumentRequest) (*pb
 		Id: strconv.FormatInt(req.DocumentId, 10),
 	}
 	if err := dao.GetDocument(ctx, &ESDocument); err != nil {
-		if err == Error.DocumentNotFound {
+		if errors.Is(err, Error.DocumentNotFound) {
 			Logger.Logger.Debug("Service: Document not found")
 			return &pb.GetDocumentResponse{
 				Code: int64(ErrCode.DocumentNotFound),

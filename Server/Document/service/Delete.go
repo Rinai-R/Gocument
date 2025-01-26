@@ -12,7 +12,7 @@ import (
 )
 
 func (*DocumentServer) Delete(c context.Context, req *pb.DeleteRequest) (*pb.DeleteResponse, error) {
-	id, err := dao.GetId(req.Username)
+	id, err := dao.GetId(c, req.Username)
 	if err != nil {
 		Logger.Logger.Debug("Service: Unknown username " + err.Error())
 	}

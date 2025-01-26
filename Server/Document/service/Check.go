@@ -11,7 +11,7 @@ import (
 )
 
 func (*DocumentServer) Check(c context.Context, req *pb.CheckPermissionRequest) (*pb.CheckPermissionResponse, error) {
-	id, err := dao.GetId(req.Username)
+	id, err := dao.GetId(c, req.Username)
 	if err != nil {
 		return &pb.CheckPermissionResponse{
 			Code: int64(ErrCode.InternalErr),

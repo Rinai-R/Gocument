@@ -173,8 +173,8 @@ func ReadAndWrite(c context.Context, _ *app.RequestContext, DocumentId int, conn
 			Logger.Logger.Debug("Api: Connection Disconnected")
 		}()
 
-		for { //等待五秒自己保存。
-			//自动保存逻辑
+		for {
+			//保存逻辑
 			//先读取信息
 			_, msg, err := conn.ReadMessage()
 			if err != nil {

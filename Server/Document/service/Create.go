@@ -13,7 +13,7 @@ type DocumentServer struct {
 }
 
 func (*DocumentServer) Create(ctx context.Context, req *pb.CreateRequest) (*pb.CreateResponse, error) {
-	Id, err := dao.GetId(req.Username)
+	Id, err := dao.GetId(ctx, req.Username)
 	if err != nil {
 		return &pb.CreateResponse{
 			Code: int64(ErrCode.InternalErr),
