@@ -16,7 +16,7 @@ type Document struct {
 // 存储在ES中，便于实现查询功能
 type ElasticDocument struct {
 	Id      string `json:"id,omitempty"`
-	Title   string `json:"user_id,omitempty"`
+	Title   string `json:"title,omitempty"`
 	Content string `json:"content,omitempty"`
 }
 

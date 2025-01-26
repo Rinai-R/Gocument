@@ -8,31 +8,34 @@
       <Current>1</Current>
     </schema>
     <schema id="3" parent="1" name="1"/>
-    <schema id="4" parent="1" name="10"/>
-    <schema id="5" parent="1" name="11"/>
-    <schema id="6" parent="1" name="12"/>
-    <schema id="7" parent="1" name="13"/>
-    <schema id="8" parent="1" name="14"/>
-    <schema id="9" parent="1" name="15"/>
-    <schema id="10" parent="1" name="2"/>
-    <schema id="11" parent="1" name="3"/>
-    <schema id="12" parent="1" name="4"/>
-    <schema id="13" parent="1" name="5"/>
-    <schema id="14" parent="1" name="6"/>
-    <schema id="15" parent="1" name="7"/>
-    <schema id="16" parent="1" name="8"/>
-    <schema id="17" parent="1" name="9"/>
+    <schema id="4" parent="1" name="2"/>
+    <schema id="5" parent="1" name="3"/>
+    <schema id="6" parent="1" name="4"/>
+    <schema id="7" parent="1" name="5"/>
+    <schema id="8" parent="1" name="6"/>
+    <schema id="9" parent="1" name="7"/>
+    <schema id="10" parent="1" name="8"/>
+    <schema id="11" parent="1" name="9"/>
+    <schema id="12" parent="1" name="10"/>
+    <schema id="13" parent="1" name="11"/>
+    <schema id="14" parent="1" name="12"/>
+    <schema id="15" parent="1" name="13"/>
+    <schema id="16" parent="1" name="14"/>
+    <schema id="17" parent="1" name="15"/>
     <hash-table id="18" parent="2" name="user:1"/>
     <set id="19" parent="2" name="friend:1"/>
     <set id="20" parent="2" name="friend:2"/>
     <sorted-set id="21" parent="2" name="stus"/>
-    <string id="22" parent="2" name="DocuId:6"/>
-    <string id="23" parent="2" name="Perm:6:2"/>
-    <string id="24" parent="2" name="id:clastin"/>
-    <string id="25" parent="2" name="shopping:goods:1"/>
-    <string id="26" parent="2" name="shopping:goods:2"/>
-    <string id="27" parent="2" name="shopping:goods:3"/>
-    <string id="28" parent="2" name="shopping:user:1"/>
-    <string id="29" parent="2" name="shopping:user:2"/>
+    <string id="22" parent="2" name="DocuId:3"/>
+    <string id="23" parent="2" name="Perm:3:1"/>
+    <string id="24" parent="2" name="Perm:6:1"/>
+    <string id="25" parent="2" name="Perm:6:2"/>
+    <string id="26" parent="2" name="id:clastin"/>
+    <string id="27" parent="2" name="id:rinai"/>
+    <string id="28" parent="2" name="shopping:goods:1"/>
+    <string id="29" parent="2" name="shopping:goods:2"/>
+    <string id="30" parent="2" name="shopping:goods:3"/>
+    <string id="31" parent="2" name="shopping:user:1"/>
+    <string id="32" parent="2" name="shopping:user:2"/>
   </database-model>
 </dataSource>

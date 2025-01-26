@@ -5,23 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Middleware/jwt.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Middleware/jwt.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Grant.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Delete.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Get.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Document/service/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Grant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/Error/Error.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/Error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,21 +131,20 @@
       <filePath value="$PROJECT_DIR$/Server/Document/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build github.com/Rinai-R/Gocument/Server/User" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Gocument" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/Rinai-R/Gocument/Server/User" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Server/User/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/app/main.go" />
+      <filePath value="$PROJECT_DIR$/Server/User/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Gocument" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/App/main.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -167,14 +159,13 @@
     </configuration>
     <list>
       <item itemvalue="Go 构建.go build main.go" />
+      <item itemvalue="Go 构建.go build main.go (1)" />
       <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
-      <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/User" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
-        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/User" />
-        <item itemvalue="Go 构建.go build main.go" />
+        <item itemvalue="Go 构建.go build main.go (1)" />
       </list>
     </recent_temporary>
   </component>

@@ -36,8 +36,11 @@ func Grant(c context.Context, ctx *app.RequestContext) {
 	case ErrCode.OK:
 		ctx.JSON(http.StatusOK, Rsp.Success(nil))
 		break
-	default:
+	case ErrCode.GrantFailed:
 		ctx.JSON(http.StatusBadRequest, Rsp.GrantFailed(res.Msg))
+		break
+	default:
+		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))
 		break
 	}
 	return

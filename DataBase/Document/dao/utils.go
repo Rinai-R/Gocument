@@ -24,7 +24,7 @@ func GetId(ctx context.Context, username string) (int, error) {
 		DB.Rdb.Expire(ctx, key, time.Duration(mul)*time.Minute)
 		return strconv.Atoi(ans)
 	}
-	//没读取到，去mysql里面读取
+	//redis没读取到，去mysql里面读取
 	var user models.User
 	res := DB.Db.Where("username = ?", username).Select("id").First(&user)
 	if res.Error != nil {

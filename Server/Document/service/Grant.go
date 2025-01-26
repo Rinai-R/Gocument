@@ -21,10 +21,10 @@ func (*DocumentServer) Grant(ctx context.Context, req *pb.GrantRequest) (*pb.Gra
 	permission := models.Permission{
 		DocumentId: int(req.DocumentId),
 		UserId:     int(req.UserId),
-		Type:       false,
+		Type:       req.Type,
 	}
 
-	if err := dao.Grant(permission); err != nil {
+	if err := dao.Grant(ctx, permission); err != nil {
 		return &pb.GrantResponse{
 			Code: int64(ErrCode.InternalErr),
 			Msg:  err.Error(),

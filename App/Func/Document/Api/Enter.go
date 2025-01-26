@@ -101,6 +101,7 @@ func OnlyRead(c context.Context, ctx *app.RequestContext, DocumentId int, conn *
 		_ = conn.WriteMessage(websocket.TextMessage, msg)
 		break
 	case ErrCode.OK:
+		_ = conn.WriteMessage(websocket.TextMessage, []byte("Only Read Mode"))
 		Document := &models.ElasticDocument{
 			Id:      strconv.Itoa(DocumentId),
 			Title:   res.Title,
@@ -148,6 +149,7 @@ func ReadAndWrite(c context.Context, _ *app.RequestContext, DocumentId int, conn
 
 		//OK的逻辑
 	case ErrCode.OK:
+		_ = conn.WriteMessage(websocket.TextMessage, []byte("Read And Write Mode"))
 		//先将结构体转成json格式发送给前端
 		Document := &models.ElasticDocument{
 			Id:      strconv.Itoa(DocumentId),
