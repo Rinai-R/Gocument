@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Grant.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Grant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
