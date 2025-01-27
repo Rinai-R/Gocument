@@ -114,3 +114,11 @@ func GrantFailed(data interface{}) Rsp {
 		Data: data,
 	}
 }
+
+func SensitiveWords(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.SensitiveWords,
+		Info: Error.SensitiveWords.Error(),
+		Data: data,
+	}
+}

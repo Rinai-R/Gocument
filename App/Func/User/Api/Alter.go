@@ -47,6 +47,10 @@ func AlterUserInfo(c context.Context, ctx *app.RequestContext) {
 		Logger.Logger.Debug("API: AlterUserInfo UserNotExists")
 		ctx.JSON(http.StatusBadRequest, Rsp.UserNotExists(nil))
 		break
+	case ErrCode.SensitiveWords:
+		Logger.Logger.Debug("API: AlterUserInfo SensitiveWords")
+		ctx.JSON(http.StatusBadRequest, Rsp.SensitiveWords(nil))
+		break
 	default:
 		Logger.Logger.Debug("API: Internal Error " + res.Msg)
 		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))

@@ -16,4 +16,5 @@ var (
 	EnterForbidden           = errors.New("EnterForbidden: you dose not have permission")
 	GrantFailed              = errors.New("NotDocumentHost: maybe you are not document host")
 	TokenExpired             = errors.New("TokenExpired: token expired")
+	SensitiveWords           = errors.New("SensitiveKeys: Sensitive Keys exist")
 )

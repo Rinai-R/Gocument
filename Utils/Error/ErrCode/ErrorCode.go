@@ -27,6 +27,8 @@ var (
 	EnterForbidden = 40010
 	// GrantFailed 授权失败
 	GrantFailed = 40011
+	// SensitiveWords 敏感词审查
+	SensitiveWords = 40012
 	// InternalErr 内部其他错误
 	InternalErr = 50000
 )

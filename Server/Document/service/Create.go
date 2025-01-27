@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/Rinai-R/Gocument/DataBase/Document/dao"
 	pb "github.com/Rinai-R/Gocument/Server/Document/rpc"
+	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
 	"github.com/Rinai-R/Gocument/models"
 )
@@ -18,6 +19,12 @@ func (*DocumentServer) Create(ctx context.Context, req *pb.CreateRequest) (*pb.C
 		return &pb.CreateResponse{
 			Code: int64(ErrCode.InternalErr),
 			Msg:  err.Error(),
+		}, nil
+	}
+	if !dao.SensitiveCheck(ctx, req.Title) {
+		return &pb.CreateResponse{
+			Code: int64(ErrCode.SensitiveWords),
+			Msg:  Error.SensitiveWords.Error(),
 		}, nil
 	}
 	Document := models.Document{

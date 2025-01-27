@@ -4,8 +4,10 @@ import (
 	"context"
 	"fmt"
 	"github.com/Rinai-R/Gocument/DataBase/DB"
+	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/models"
+	"github.com/olivere/elastic/v7"
 	"math/rand"
 	"strconv"
 	"time"
@@ -50,4 +52,27 @@ func IsHost(ctx context.Context, username string, DocumentId int) error {
 		return res.Error
 	}
 	return nil
+}
+
+func SensitiveCheck(ctx context.Context, str string) bool {
+	matchQuery := elastic.NewMatchQuery("key", str)
+
+	// 根据信息查询，是否命中敏感词汇
+	searchResult, err := DB.ES.Search().
+		Index(conf.DB.ElasticSearch.Sensitive).
+		Query(matchQuery).
+		TrackTotalHits(true). // 跟踪总命中数
+		Size(100).
+		Do(ctx) // 执行查询
+	if err != nil {
+		Logger.Logger.Debug("Sensitive Check Error " + err.Error())
+		return false
+	}
+	fmt.Println(searchResult.Hits.TotalHits.Value)
+	// 处理响应
+	totalHits := searchResult.Hits.TotalHits.Value
+	if totalHits == 0 {
+		return true
+	}
+	return false
 }

@@ -3,7 +3,8 @@ package service
 import (
 	"context"
 	"errors"
-	"github.com/Rinai-R/Gocument/DataBase/User/dao"
+	Ddao "github.com/Rinai-R/Gocument/DataBase/Document/dao"
+	Udao "github.com/Rinai-R/Gocument/DataBase/User/dao"
 	"github.com/Rinai-R/Gocument/Logger"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"
@@ -17,7 +18,7 @@ type UserServer struct {
 }
 
 // Register 重写注册方法
-func (*UserServer) Register(_ context.Context, req *pb.RegisterRequest) (*pb.RegisterResponse, error) {
+func (*UserServer) Register(ctx context.Context, req *pb.RegisterRequest) (*pb.RegisterResponse, error) {
 	user := models.User{
 		Username: req.UserName,
 		Password: req.Password,
@@ -38,11 +39,18 @@ func (*UserServer) Register(_ context.Context, req *pb.RegisterRequest) (*pb.Reg
 			Msg:  Error.ErrpasswordLen.Error(),
 		}, nil
 	}
+	if !Ddao.SensitiveCheck(ctx, user.Username) {
+		Logger.Logger.Debug("Service: Sensitive Check")
+		return &pb.RegisterResponse{
+			Code: int64(ErrCode.SensitiveWords),
+			Msg:  Error.SensitiveWords.Error(),
+		}, nil
+	}
 	//加密存储
 	user.Password = encrypt.EncryptPassword(user.Password)
 
 	//注册到数据库时出现错误
-	if err := dao.Register(user); err != nil {
+	if err := Udao.Register(user); err != nil {
 		if errors.Is(err, Error.UserExists) {
 			Logger.Logger.Debug("Service: User Exists Error")
 			return &pb.RegisterResponse{
@@ -69,7 +77,7 @@ func (*UserServer) Login(_ context.Context, req *pb.LoginRequest) (*pb.LoginResp
 		Password: req.Password,
 	}
 
-	if err := dao.Login(user); err != nil {
+	if err := Udao.Login(user); err != nil {
 		if errors.Is(err, Error.UsernameOrPassword) {
 			Logger.Logger.Debug("Service: User Username Or Password Error")
 			return &pb.LoginResponse{

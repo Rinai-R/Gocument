@@ -3,7 +3,8 @@ package service
 import (
 	"context"
 	"errors"
-	"github.com/Rinai-R/Gocument/DataBase/User/dao"
+	Ddao "github.com/Rinai-R/Gocument/DataBase/Document/dao"
+	Udao "github.com/Rinai-R/Gocument/DataBase/User/dao"
 	"github.com/Rinai-R/Gocument/Logger"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"
@@ -12,11 +13,17 @@ import (
 	"github.com/Rinai-R/Gocument/models"
 )
 
-func (*UserServer) Alter(_ context.Context, req *pb.AlterRequest) (*pb.AlterResponse, error) {
+func (*UserServer) Alter(ctx context.Context, req *pb.AlterRequest) (*pb.AlterResponse, error) {
 	if req.Avatar == "" && req.Bio == "" && req.Password == "" && req.Gender == "" {
 		return &pb.AlterResponse{
 			Code: int64(ErrCode.RequestNull),
 			Msg:  Error.RequestNull.Error(),
+		}, nil
+	}
+	if !Ddao.SensitiveCheck(ctx, req.Bio) || !Ddao.SensitiveCheck(ctx, req.Gender) {
+		return &pb.AlterResponse{
+			Code: int64(ErrCode.SensitiveWords),
+			Msg:  Error.SensitiveWords.Error(),
 		}, nil
 	}
 	if req.Password != "" && len(req.Password) < 5 || len(req.Password) > 25 {
@@ -36,7 +43,7 @@ func (*UserServer) Alter(_ context.Context, req *pb.AlterRequest) (*pb.AlterResp
 		Avatar:   req.Avatar,
 	}
 
-	if err := dao.AlterUserInfo(user); err != nil {
+	if err := Udao.AlterUserInfo(user); err != nil {
 		if errors.Is(err, Error.UserNotExists) {
 			Logger.Logger.Debug("Service: Not Find User")
 			return &pb.AlterResponse{

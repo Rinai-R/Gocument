@@ -38,6 +38,10 @@ func CreateDocument(c context.Context, ctx *app.RequestContext) {
 		Logger.Logger.Debug("Create Document OK")
 		ctx.JSON(http.StatusOK, Rsp.Success(nil))
 		break
+	case ErrCode.SensitiveWords:
+		Logger.Logger.Debug("Api: The content has sensitive words")
+		ctx.JSON(http.StatusBadRequest, Rsp.BindErr("SensitiveWords error"))
+		break
 	default:
 		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))
 		break

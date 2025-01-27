@@ -12,6 +12,7 @@ type DBConfig struct {
 	MySQL.MySQL
 	Redis.Redis
 	ElasticSearch.ElasticSearch
+	ElasticSearch.SKey
 }
 
 var DB *DBConfig

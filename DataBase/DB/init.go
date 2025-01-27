@@ -2,6 +2,7 @@ package DB
 
 import (
 	"context"
+	"github.com/Rinai-R/Gocument/DataBase/DB/ElasticSearch"
 	"github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/models"
@@ -9,6 +10,7 @@ import (
 	"github.com/redis/go-redis/v9"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"strconv"
 )
 
 var Rdb *redis.Client
@@ -76,7 +78,32 @@ func init() {
 		if err2 != nil {
 			Logger.Logger.Panic(err2.Error() + " Document Create Index Request Error")
 		}
+		Logger.Logger.Debug("Create Document Index OK")
 	}
-	Logger.Logger.Debug("Elasticsearch OK")
 
+	Skeys := conf.DB.ElasticSearch.Sensitive
+	exists, err = ES.IndexExists(Skeys).Do(context.Background())
+	if err != nil {
+		Logger.Logger.Panic(err.Error() + " Sensitive Exists Request Error")
+	}
+	if !exists {
+		_, err2 := ES.CreateIndex(Skeys).Body(ElasticSearch.Keys).Do(context.Background())
+		if err2 != nil {
+			Logger.Logger.Panic(err2.Error() + " Document Create Index Request Error")
+		}
+		Logger.Logger.Debug("Sensitive Index Created")
+	}
+	//敏感词插入
+	for i := 0; i < len(conf.DB.SKey.Keys); i++ {
+
+		KeyDoc := ElasticSearch.KeyDocument{Key: conf.DB.SKey.Keys[i]}
+		//插入或更新敏感词
+		_, err = ES.Index().
+			Index(Skeys).
+			Id(strconv.Itoa(i + 1)).
+			BodyJson(KeyDoc).
+			Do(context.Background())
+	}
+
+	Logger.Logger.Debug("Elasticsearch OK")
 }

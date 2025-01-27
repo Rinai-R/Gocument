@@ -20,6 +20,7 @@ var mu sync.Mutex
 
 // Enter websocket请求，进入文档界面，包括禁止进入，只读，读写的权限处理
 func Enter(c context.Context, ctx *app.RequestContext) {
+
 	var upgrader = websocket.HertzUpgrader{
 		CheckOrigin: func(ctx *app.RequestContext) bool {
 			return true
@@ -213,6 +214,11 @@ func ReadAndWrite(c context.Context, _ *app.RequestContext, DocumentId int, conn
 				mes, _ := json.Marshal(document)
 				broadcast(DocumentId, mes)
 				break
+			case ErrCode.SensitiveWords:
+				mes, _ := json.Marshal(Rsp.SensitiveWords(nil))
+				_ = conn.WriteMessage(websocket.TextMessage, mes)
+				break
+
 			}
 		}
 
