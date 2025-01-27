@@ -181,20 +181,20 @@ Gocument
 │               PersonalPage.go
 │
 └───Utils
-├───encrypt
-│       encrypt.go
-│
-├───Error
-│   │   Error.go
-│   │
-│   └───ErrCode
-│           ErrorCode.go
-│
-├───Rsp
-│       model.go
-│       Rsp.go
-│
-└───utils
-       Time.go
+    ├───encrypt
+    │       encrypt.go
+    │
+    ├───Error
+    │   │   Error.go
+    │   │
+    │   └───ErrCode
+    │           ErrorCode.go
+    │
+    ├───Rsp
+    │       model.go
+    │       Rsp.go
+    │
+    └───utils
+            Time.go
 ```
 
