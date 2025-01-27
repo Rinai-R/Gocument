@@ -12,7 +12,7 @@ import (
 
 func (*UserServer) PersonalPage(c context.Context, req *pb.PersonalPageRequest) (*pb.PersonalPageResponse, error) {
 	user := models.User{
-		Username: req.Username,
+		Id: req.UserId,
 	}
 	if err := dao.PersonalPage(c, &user); err != nil {
 		return &pb.PersonalPageResponse{
@@ -35,8 +35,8 @@ func (*UserServer) PersonalPage(c context.Context, req *pb.PersonalPageRequest) 
 			Id:        int64(d.Id),
 			Title:     d.Title,
 			IsPrivate: d.IsPrivate,
-			CreateAt:  timestamppb.New(d.CreateTime),
-			UpdatedAt: timestamppb.New(d.UpdateTime),
+			CreateAt:  timestamppb.New(d.CreateAt),
+			UpdatedAt: timestamppb.New(d.UpdateAt),
 		})
 	}
 	Logger.Logger.Debug("response generate ok")

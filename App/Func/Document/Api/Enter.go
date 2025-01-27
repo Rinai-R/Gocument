@@ -14,6 +14,7 @@ import (
 	"net/http"
 	"strconv"
 	"sync"
+	"time"
 )
 
 var mu sync.Mutex
@@ -153,9 +154,11 @@ func ReadAndWrite(c context.Context, _ *app.RequestContext, DocumentId int, conn
 		_ = conn.WriteMessage(websocket.TextMessage, []byte("Read And Write Mode"))
 		//先将结构体转成json格式发送给前端
 		Document := &models.ElasticDocument{
-			Id:      strconv.Itoa(DocumentId),
-			Title:   res.Title,
-			Content: res.Content,
+			Id:       strconv.Itoa(DocumentId),
+			Title:    res.Title,
+			Content:  res.Content,
+			CreateAt: res.CreateAt.AsTime(),
+			UpdateAt: res.UpdatedAt.AsTime(),
 		}
 		mes, _ := json.Marshal(Document)
 		err := conn.WriteMessage(websocket.TextMessage, mes)
@@ -196,6 +199,7 @@ func ReadAndWrite(c context.Context, _ *app.RequestContext, DocumentId int, conn
 				msg, _ := json.Marshal(Rsp.InternalError(err.Error()))
 				_ = conn.WriteMessage(websocket.TextMessage, msg)
 			}
+			document.UpdateAt = time.Now()
 			//发送请求
 			res, _ := Client.DocumentClient.Edit(c, &pb.EditRequest{
 				DocumentId: int64(DocumentId),

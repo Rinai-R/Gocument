@@ -8,6 +8,6 @@ type Permission struct {
 	DocumentId int      `json:"document_id,omitempty" gorm:"not null;index:documentid_userid_idx"`
 	UserId     int      `json:"user_id,omitempty" gorm:"not null;index:documentid_userid_idx"`
 	Type       bool     `json:"type,omitempty" gorm:"not null"`
-	Document   Document `gorm:"foreignKey:DocumentId"`
-	User       User     `gorm:"foreignKey:UserId"`
+	Document   Document `gorm:"foreignKey:DocumentId;constraint:onDelete:CASCADE"`
+	User       User     `gorm:"foreignKey:UserId;constraint:onDelete:CASCADE"`
 }

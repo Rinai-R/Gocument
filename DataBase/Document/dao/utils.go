@@ -68,7 +68,8 @@ func SensitiveCheck(ctx context.Context, str string) bool {
 		Logger.Logger.Debug("Sensitive Check Error " + err.Error())
 		return false
 	}
-	fmt.Println(searchResult.Hits.TotalHits.Value)
+	msg := fmt.Sprintf("Dao: 敏感词命中%v个",searchResult.Hits.TotalHits.Value)
+	Logger.Logger.Debug(msg)
 	// 处理响应
 	totalHits := searchResult.Hits.TotalHits.Value
 	if totalHits == 0 {

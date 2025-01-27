@@ -5,25 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/Func/Document/Api/Search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase/Document/dao/Search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/service/Search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Create.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Api/Enter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/Func/User/Api/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/User/Api/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document.proto" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/Document/Client/rpc/document_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/User/Api/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/User/Api/PersonalPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/User/Client/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/User/Client/rpc/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Func/User/Client/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/App/Func/User/Client/rpc/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/Router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/App/Router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/Sensitive.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/Get.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/DataBase/conf/DB/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Edit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/rpc/document.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/rpc/document.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/rpc/document.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/rpc/document.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/rpc/document_grpc.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/rpc/document_grpc.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/rpc/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/rpc/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/ErrCode/ErrorCode.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/Error/Error.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Error/Error.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/Rsp/Rsp.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Rsp/Rsp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/utils/Time.go" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/utils/Time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Document.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Document.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Permission.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Permission.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,10 +121,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\New\project\Gocument\Server\Document" />
+      <recent name="D:\New\project\Gocument\Server\User" />
       <recent name="D:\New\project\Gocument\Gocument\Server\Document" />
       <recent name="D:\New\project\Gocument\Gocument\Server\User" />
       <recent name="D:\New\project\Gocument\Gocument\Server" />
-      <recent name="D:\New\project\Gocument\Gocument\app\Func\Document\Client\rpc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\New\project\Gocument\DataBase\DB\ElasticSearch" />

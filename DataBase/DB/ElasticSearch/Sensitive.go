@@ -16,7 +16,7 @@ func init() {
         "properties": {
             "key": {
                 "type": "text",
-                "analyzer": "ik_max_words"
+                "analyzer": "ik_smart"
             }
         }
     }

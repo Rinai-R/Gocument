@@ -2,6 +2,8 @@ syntax="proto3";
 
 option go_package=".;pb";
 
+import "google/protobuf/timestamp.proto";
+
 //创建文档请求
 message CreateRequest {
   string Username = 1;
@@ -47,6 +49,8 @@ message GetDocumentResponse {
   string Msg = 2;
   string Title = 3;
   string Content = 4;
+  google.protobuf.Timestamp CreateAt = 5;
+  google.protobuf.Timestamp UpdatedAt = 6;
 }
 
 //修改文档并保存的操作
@@ -74,6 +78,28 @@ message GrantResponse {
   string Msg = 2;
 }
 
+
+
+//搜索请求
+message SearchRequest {
+  string content = 1;
+  int64 UserId = 2;
+}
+
+message Doc {
+  int64 Id = 1;
+  string Title = 2;
+  bool IsPrivate = 3;
+  google.protobuf.Timestamp CreateAt = 5;
+  google.protobuf.Timestamp UpdatedAt = 6;
+}
+
+message SearchResponse {
+  int64 Code = 1;
+  string Msg = 2;
+  repeated Doc Documents = 3;
+}
+
 service Document {
   rpc Create(CreateRequest) returns(CreateResponse);
   rpc Delete(DeleteRequest) returns(DeleteResponse);
@@ -81,4 +107,5 @@ service Document {
   rpc Get(GetDocumentRequest) returns(GetDocumentResponse);
   rpc Edit(EditRequest) returns(EditResponse);
   rpc Grant(GrantRequest) returns(GrantResponse);
+  rpc Search(SearchRequest) returns(SearchResponse);
 }

@@ -8,18 +8,8 @@ import (
 )
 
 func PersonalPage(_ context.Context, user *models.User) error {
-	//key := fmt.Sprintf("u:" + user.Username)
-	//if res, err := DB.Rdb.HGetAll(c, key).Result(); err == nil {
-	//	if err = mapstructure.Decode(res, &user); err == nil {
-	//		Logger.Logger.Info("Dao: Redis Cache Read")
-	//		return nil
-	//	}
-	//	Logger.Logger.Debug("Dao: Redis Cache Read failed")
-	//} else {
-	//	Logger.Logger.Debug("Dao: Redis Cache User Not Found")
-	//}
 
-	err := DB.Db.Where("username = ?", user.Username).First(&user).Error
+	err := DB.Db.Where("id = ?", user.Id).First(&user).Error
 	if err != nil {
 		Logger.Logger.Debug("Dao: SQL User Not Found")
 		return err

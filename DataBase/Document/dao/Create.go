@@ -31,9 +31,13 @@ func Create(ctx context.Context, document models.Document) error {
 
 	//在es里面初始化文档数据
 	ESDocument := models.ElasticDocument{
-		Id:      strconv.Itoa(document.Id),
-		Title:   document.Title,
-		Content: "在这里填写你的文档吧！",
+		Id:        strconv.Itoa(document.Id),
+		UserId:    int64(document.UserId),
+		Title:     document.Title,
+		IsPrivate: document.IsPrivate,
+		Content:   "在这里填写你的文档吧！",
+		CreateAt:  document.CreateAt,
+		UpdateAt:  document.UpdateAt,
 	}
 	do, err := DB.ES.Index().
 		Index(conf.DB.ElasticSearch.IndexName).

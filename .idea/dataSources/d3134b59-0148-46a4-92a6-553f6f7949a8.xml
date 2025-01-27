@@ -26,16 +26,9 @@
     <set id="19" parent="2" name="friend:1"/>
     <set id="20" parent="2" name="friend:2"/>
     <sorted-set id="21" parent="2" name="stus"/>
-    <string id="22" parent="2" name="DocuId:3"/>
-    <string id="23" parent="2" name="Perm:3:1"/>
-    <string id="24" parent="2" name="Perm:6:1"/>
-    <string id="25" parent="2" name="Perm:6:2"/>
-    <string id="26" parent="2" name="id:clastin"/>
-    <string id="27" parent="2" name="id:rinai"/>
-    <string id="28" parent="2" name="shopping:goods:1"/>
-    <string id="29" parent="2" name="shopping:goods:2"/>
-    <string id="30" parent="2" name="shopping:goods:3"/>
-    <string id="31" parent="2" name="shopping:user:1"/>
-    <string id="32" parent="2" name="shopping:user:2"/>
+    <string id="22" parent="2" name="DocuId:1"/>
+    <string id="23" parent="2" name="DocuId:6"/>
+    <string id="24" parent="2" name="Perm:1:1"/>
+    <string id="25" parent="2" name="id:rinai"/>
   </database-model>
 </dataSource>

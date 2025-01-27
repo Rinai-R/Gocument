@@ -17,4 +17,5 @@ var (
 	GrantFailed              = errors.New("NotDocumentHost: maybe you are not document host")
 	TokenExpired             = errors.New("TokenExpired: token expired")
 	SensitiveWords           = errors.New("SensitiveKeys: Sensitive Keys exist")
+	SearchError              = errors.New("SearchError: search error or result null")
 )

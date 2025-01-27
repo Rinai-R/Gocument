@@ -122,3 +122,11 @@ func SensitiveWords(data interface{}) Rsp {
 		Data: data,
 	}
 }
+
+func SearchError(data interface{}) Rsp {
+	return Rsp{
+		Code: ErrCode.SearchError,
+		Info: Error.SearchError.Error(),
+		Data: data,
+	}
+}

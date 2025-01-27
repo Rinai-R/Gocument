@@ -29,6 +29,8 @@ var (
 	GrantFailed = 40011
 	// SensitiveWords 敏感词审查
 	SensitiveWords = 40012
+	// SearchError 搜索过程出现错误或没有搜索到任何内容
+	SearchError = 40013
 	// InternalErr 内部其他错误
 	InternalErr = 50000
 )

@@ -2,6 +2,7 @@ package dao
 
 import (
 	"context"
+	"fmt"
 	"github.com/Rinai-R/Gocument/DataBase/DB"
 	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
@@ -12,6 +13,7 @@ import (
 
 func Delete(ctx context.Context, document models.Document) error {
 	tx := DB.Db.Begin()
+	fmt.Println(document)
 	res := tx.Where("id = ? AND user_id = ?", document.Id, document.UserId).Delete(&models.Document{})
 	if res.RowsAffected == 0 {
 		tx.Rollback()

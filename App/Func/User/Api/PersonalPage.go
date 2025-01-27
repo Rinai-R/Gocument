@@ -14,24 +14,26 @@ import (
 )
 
 func PersonalPage(c context.Context, ctx *app.RequestContext) {
-	GetName, exist := ctx.Get("GetName")
+	_, exist := ctx.Get("GetName")
 	if !exist {
 		Logger.Logger.Debug("GetName is null")
 		ctx.JSON(http.StatusUnauthorized, Rsp.TokenError("GetName not exist"))
 		return
 	}
 	var user models.User
-	user.Username = GetName.(string)
+	err := ctx.BindJSON(&user)
+	if err != nil {
+		Logger.Logger.Debug("BindError " + err.Error())
+		ctx.JSON(http.StatusBadRequest, Rsp.BindErr(err.Error()))
+		return
+	}
 	res, _ := Client.UserClient.PersonalPage(c, &pb.PersonalPageRequest{
-		Username: user.Username,
+		UserId: user.Id,
 	})
 	switch int(res.Code) {
 	case ErrCode.OK:
-		if UserPage, ok := utils.TimestampToTime(res); ok {
-			ctx.JSON(http.StatusOK, Rsp.Success(UserPage))
-		} else {
-			ctx.JSON(http.StatusInternalServerError, Rsp.InternalError("TimeTransition failed"))
-		}
+		UserPage := utils.TimestampToTime(res)
+		ctx.JSON(http.StatusOK, Rsp.Success(UserPage))
 		break
 	default:
 		ctx.JSON(http.StatusInternalServerError, Rsp.InternalError(res.Msg))

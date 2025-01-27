@@ -7,7 +7,7 @@ MySQL:
 Redis:
   Addr: "192.168.195.129:6379"
   UserName: "root"
-  Password: "~123456"
+  Password: "123456"
   DBName: "0"
 
 ElasticSearch:

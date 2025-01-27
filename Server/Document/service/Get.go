@@ -9,6 +9,7 @@ import (
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
 	"github.com/Rinai-R/Gocument/models"
+	"google.golang.org/protobuf/types/known/timestamppb"
 	"strconv"
 )
 
@@ -32,9 +33,11 @@ func (*DocumentServer) Get(ctx context.Context, req *pb.GetDocumentRequest) (*pb
 	}
 	Logger.Logger.Debug("Service: OK")
 	return &pb.GetDocumentResponse{
-		Code:    int64(ErrCode.OK),
-		Msg:     "ok",
-		Title:   ESDocument.Title,
-		Content: ESDocument.Content,
+		Code:      int64(ErrCode.OK),
+		Msg:       "ok",
+		Title:     ESDocument.Title,
+		Content:   ESDocument.Content,
+		CreateAt:  timestamppb.New(ESDocument.CreateAt),
+		UpdatedAt: timestamppb.New(ESDocument.UpdateAt),
 	}, nil
 }

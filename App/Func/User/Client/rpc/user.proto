@@ -46,7 +46,7 @@ message AlterResponse {
 
 //查看个人主页
 message PersonalPageRequest {
-  string Username = 1;
+  int64 UserId = 1;
 }
 
 message Do {

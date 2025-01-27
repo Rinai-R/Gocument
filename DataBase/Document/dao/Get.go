@@ -3,6 +3,7 @@ package dao
 import (
 	"context"
 	"encoding/json"
+	"fmt"
 	"github.com/Rinai-R/Gocument/DataBase/DB"
 	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
@@ -27,6 +28,7 @@ func GetDocument(ctx context.Context, ESDocument *models.ElasticDocument) error 
 			Logger.Logger.Debug("Dao: Bind Json Error " + err.Error())
 			return err
 		}
+		fmt.Println(ESDocument)
 		Logger.Logger.Debug("Dao: Bind Json Success " + ESDocument.Id)
 		return nil
 	}

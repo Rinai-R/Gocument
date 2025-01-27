@@ -928,7 +928,7 @@
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="293" parent="1" name="test">
-      <LastIntrospectionLocalTimestamp>2025-01-26.08:25:15</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-01-27.07:52:22</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="294" parent="1" name="root">
@@ -25123,7 +25123,7 @@ tenant_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="4814" parent="692" name="id">
-      <AutoIncrement>15</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
@@ -25142,12 +25142,12 @@ tenant_id</ColNames>
       <Position>4</Position>
       <StoredType>tinyint(1)|0s</StoredType>
     </column>
-    <column id="4818" parent="692" name="create_time">
+    <column id="4818" parent="692" name="create_at">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>datetime(3)|0s</StoredType>
     </column>
-    <column id="4819" parent="692" name="update_time">
+    <column id="4819" parent="692" name="update_at">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>datetime(3)|0s</StoredType>
@@ -25188,11 +25188,13 @@ tenant_id</ColNames>
     </column>
     <foreign-key id="4827" parent="693" name="fk_permissions_document">
       <ColNames>document_id</ColNames>
+      <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefTableName>documents</RefTableName>
     </foreign-key>
     <foreign-key id="4828" parent="693" name="fk_permissions_user">
       <ColNames>user_id</ColNames>
+      <OnDelete>cascade</OnDelete>
       <RefColNames>id</RefColNames>
       <RefTableName>users</RefTableName>
     </foreign-key>

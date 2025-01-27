@@ -33,6 +33,8 @@ func InitRouter() {
 
 		DocumentGroup.DELETE("/delete", DApi.DeleteDocument)
 
+		DocumentGroup.GET("/search", DApi.Search)
+
 		DocumentGroup.GET("/enter", DApi.Enter)
 	}
 
