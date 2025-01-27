@@ -36,6 +36,8 @@
 
 [点我查看接口文档](https://yzgun2n454.apifox.cn/)
 
+[自定义错误码详解](https://github.com/Rinai-R/Gocument/blob/main/Utils/Error/ErrCode/ErrorCode.go)
+
 ----
 
 ## 项目结构
