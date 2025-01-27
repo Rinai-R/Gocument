@@ -36,3 +36,165 @@
 
 [点我查看接口文档](https://yzgun2n454.apifox.cn/)
 
+----
+
+## 项目结构
+
+```go
+Gocument
+│
+├───App
+│   │   main.go
+│   │
+│   ├───Func
+│   │   ├───Document
+│   │   │   ├───Api
+│   │   │   │       Create.go
+│   │   │   │       DeleteDocument.go
+│   │   │   │       Enter.go
+│   │   │   │       Grant.go
+│   │   │   │       Search.go
+│   │   │   │
+│   │   │   └───Client
+│   │   │       │   DocumentClient.go
+│   │   │       │
+│   │   │       └───rpc
+│   │   │               code
+│   │   │               document.pb.go
+│   │   │               document.proto
+│   │   │               document_grpc.pb.go
+│   │   │
+│   │   └───User
+│   │       ├───Api
+│   │       │       Alter.go
+│   │       │       Login.go
+│   │       │       PersonalPage.go
+│   │       │       Register.go
+│   │       │
+│   │       └───Client
+│   │           │   UserClient.go
+│   │           │
+│   │           └───rpc
+│   │                   code
+│   │                   user.pb.go
+│   │                   user.proto
+│   │                   user_grpc.pb.go
+│   │
+│   ├───Middleware
+│   │       jwt.go
+│   │       Token.go
+│   │
+│   └───Router
+│           router.go
+│
+├───DataBase
+│   ├───conf
+│   │   └───DB
+│   │           db.yaml
+│   │           init.go
+│   │
+│   ├───DB
+│   │   │   init.go
+│   │   │
+│   │   ├───ElasticSearch
+│   │   │       elasticsearch.go
+│   │   │       Sensitive.go
+│   │   │
+│   │   ├───MySQL
+│   │   │       mysql.go
+│   │   │
+│   │   └───Redis
+│   │           redis.go
+│   │
+│   ├───Document
+│   │   └───dao
+│   │           Check.go
+│   │           Create.go
+│   │           Delete.go
+│   │           Edit.go
+│   │           Get.go
+│   │           Grant.go
+│   │           Search.go
+│   │           utils.go
+│   │
+│   └───User
+│       └───dao
+│               Alter.go
+│               LoginAndRegister.go
+│               PersonalPage.go
+│
+├───Logger
+│   │   Logger.go
+│   │
+│   └───log
+│           logger.log
+│
+├───models
+│       Document.go
+│       Permission.go
+│       User.go
+│       websocket.go
+│
+├───Registry
+│   │   init.go
+│   │
+│   ├───conf
+│   │   └───Registry
+│   │           init.go
+│   │           registry.yaml
+│   │
+│   └───Nacos
+│           Func.go
+│           nacos.go
+│
+├───Server
+│   ├───Document
+│   │   │   main.go
+│   │   │
+│   │   ├───rpc
+│   │   │       code
+│   │   │       document.pb.go
+│   │   │       document.proto
+│   │   │       document_grpc.pb.go
+│   │   │
+│   │   └───service
+│   │           Check.go
+│   │           Create.go
+│   │           Delete.go
+│   │           Edit.go
+│   │           Get.go
+│   │           Grant.go
+│   │           Search.go
+│   │
+│   └───User
+│       │   main.go
+│       │
+│       ├───rpc
+│       │       code
+│       │       user.pb.go
+│       │       user.proto
+│       │       user_grpc.pb.go
+│       │
+│       └───service
+│               Alter.go
+│               LoginAndRegister.go
+│               PersonalPage.go
+│
+└───Utils
+├───encrypt
+│       encrypt.go
+│
+├───Error
+│   │   Error.go
+│   │
+│   └───ErrCode
+│           ErrorCode.go
+│
+├───Rsp
+│       model.go
+│       Rsp.go
+│
+└───utils
+       Time.go
+```
+
