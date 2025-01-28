@@ -42,7 +42,7 @@
 
 ## 项目结构
 
-```go
+```bat
 Gocument
 │
 ├───App
@@ -89,42 +89,6 @@ Gocument
 │   └───Router
 │           router.go
 │
-├───DataBase
-│   ├───conf
-│   │   └───DB
-│   │           db.yaml
-│   │           init.go
-│   │
-│   ├───DB
-│   │   │   init.go
-│   │   │
-│   │   ├───ElasticSearch
-│   │   │       elasticsearch.go
-│   │   │       Sensitive.go
-│   │   │
-│   │   ├───MySQL
-│   │   │       mysql.go
-│   │   │
-│   │   └───Redis
-│   │           redis.go
-│   │
-│   ├───Document
-│   │   └───dao
-│   │           Check.go
-│   │           Create.go
-│   │           Delete.go
-│   │           Edit.go
-│   │           Get.go
-│   │           Grant.go
-│   │           Search.go
-│   │           utils.go
-│   │
-│   └───User
-│       └───dao
-│               Alter.go
-│               LoginAndRegister.go
-│               PersonalPage.go
-│
 ├───Logger
 │   │   Logger.go
 │   │
@@ -153,6 +117,35 @@ Gocument
 │   ├───Document
 │   │   │   main.go
 │   │   │
+│   │   ├───DataBase
+│   │   │   ├───conf
+│   │   │   │   └───DB
+│   │   │   │           db.yaml
+│   │   │   │           init.go
+│   │   │   │
+│   │   │   ├───dao
+│   │   │   │       Check.go
+│   │   │   │       Create.go
+│   │   │   │       Delete.go
+│   │   │   │       Edit.go
+│   │   │   │       Get.go
+│   │   │   │       Grant.go
+│   │   │   │       Search.go
+│   │   │   │       utils.go
+│   │   │   │
+│   │   │   └───DB
+│   │   │       │   init.go
+│   │   │       │
+│   │   │       ├───ElasticSearch
+│   │   │       │       elasticsearch.go
+│   │   │       │       Sensitive.go
+│   │   │       │
+│   │   │       ├───MySQL
+│   │   │       │       mysql.go
+│   │   │       │
+│   │   │       └───Redis
+│   │   │               redis.go
+│   │   │
 │   │   ├───rpc
 │   │   │       code
 │   │   │       document.pb.go
@@ -170,6 +163,30 @@ Gocument
 │   │
 │   └───User
 │       │   main.go
+│       │
+│       ├───DataBase
+│       │   ├───conf
+│       │   │   └───DB
+│       │   │           db.yaml
+│       │   │           init.go
+│       │   │
+│       │   ├───dao
+│       │   │       Alter.go
+│       │   │       LoginAndRegister.go
+│       │   │       PersonalPage.go
+│       │   │
+│       │   └───DB
+│       │       │   init.go
+│       │       │
+│       │       ├───ElasticSearch
+│       │       │       elasticsearch.go
+│       │       │       Sensitive.go
+│       │       │
+│       │       ├───MySQL
+│       │       │       mysql.go
+│       │       │
+│       │       └───Redis
+│       │               redis.go
 │       │
 │       ├───rpc
 │       │       code
