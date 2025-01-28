@@ -1,6 +1,6 @@
 nacos:
   Addr: "192.168.195.129"
   Port: 8848
-  Namespace: "013f0003-2f55-485a-ba2d-c14e6b888e6e"
+  Namespace: "8cffe206-f12d-4f1e-b8a2-1c8083fd9379"
   Username: "nacos"
   Password: "nacos"

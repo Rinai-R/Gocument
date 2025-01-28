@@ -2,7 +2,7 @@ package service
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/Document/dao"
+	dao2 "github.com/Rinai-R/Gocument/Server/Document/DataBase/dao"
 	pb "github.com/Rinai-R/Gocument/Server/Document/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
@@ -16,13 +16,13 @@ func (*DocumentServer) Edit(ctx context.Context, req *pb.EditRequest) (*pb.EditR
 		Title:   req.Title,
 		Content: req.Content,
 	}
-	if !dao.SensitiveCheck(ctx, req.Title) || !dao.SensitiveCheck(ctx, req.Content) {
+	if !dao2.SensitiveCheck(ctx, req.Title) || !dao2.SensitiveCheck(ctx, req.Content) {
 		return &pb.EditResponse{
 			Code: int64(ErrCode.SensitiveWords),
 			Msg:  Error.SensitiveWords.Error(),
 		}, nil
 	}
-	if err := dao.Edit(ctx, document); err != nil {
+	if err := dao2.Edit(ctx, document); err != nil {
 		return &pb.EditResponse{
 			Code: int64(ErrCode.InternalErr),
 			Msg:  err.Error(),

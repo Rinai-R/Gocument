@@ -2,8 +2,8 @@ package dao
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/User/DataBase/DB"
 	"github.com/Rinai-R/Gocument/models"
 )
 

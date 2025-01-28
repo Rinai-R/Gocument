@@ -4,16 +4,16 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/models"
 	"github.com/olivere/elastic/v7"
 )
 
 func GetDocument(ctx context.Context, ESDocument *models.ElasticDocument) error {
-	res, err := DB.ES.Get().Index(conf.DB.ElasticSearch.IndexName).Id(ESDocument.Id).Do(ctx)
+	res, err := DB.ES.Get().Index(conf.DocDB.ElasticSearch.IndexName).Id(ESDocument.Id).Do(ctx)
 	if err != nil {
 		if elastic.IsNotFound(err) {
 			Logger.Logger.Debug("Dao: ES Document Not Found")

@@ -3,9 +3,9 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/models"
 	"strconv"
@@ -21,7 +21,7 @@ func Delete(ctx context.Context, document models.Document) error {
 		return Error.NoDocumentFoundWithToken
 	}
 	_, err := DB.ES.Delete().
-		Index(conf.DB.ElasticSearch.IndexName).
+		Index(conf.DocDB.ElasticSearch.IndexName).
 		Id(strconv.Itoa(document.Id)).
 		Do(ctx)
 	if err != nil {

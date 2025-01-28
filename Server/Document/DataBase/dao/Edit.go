@@ -2,9 +2,9 @@ package dao
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/models"
 )
 
@@ -21,7 +21,7 @@ func Edit(ctx context.Context, document models.ElasticDocument) error {
 	document.UpdateAt = doc.UpdateAt
 	document.IsPrivate = doc.IsPrivate
 	_, err = DB.ES.Update().
-		Index(conf.DB.ElasticSearch.IndexName).
+		Index(conf.DocDB.ElasticSearch.IndexName).
 		Id(document.Id).
 		Doc(document).
 		Do(ctx)

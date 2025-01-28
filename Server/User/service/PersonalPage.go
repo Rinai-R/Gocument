@@ -2,8 +2,8 @@ package service
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/User/dao"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/User/DataBase/dao"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
 	"github.com/Rinai-R/Gocument/models"

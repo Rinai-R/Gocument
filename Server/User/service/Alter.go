@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 	"errors"
-	Ddao "github.com/Rinai-R/Gocument/DataBase/Document/dao"
-	Udao "github.com/Rinai-R/Gocument/DataBase/User/dao"
 	"github.com/Rinai-R/Gocument/Logger"
+	Ddao "github.com/Rinai-R/Gocument/Server/Document/DataBase/dao"
+	Udao "github.com/Rinai-R/Gocument/Server/User/DataBase/dao"
 	pb "github.com/Rinai-R/Gocument/Server/User/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"

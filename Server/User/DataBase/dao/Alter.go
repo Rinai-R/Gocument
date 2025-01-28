@@ -3,8 +3,8 @@ package dao
 import (
 	"errors"
 	"fmt"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/User/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/models"
 	"gorm.io/gorm"

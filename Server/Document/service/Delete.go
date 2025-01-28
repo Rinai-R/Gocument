@@ -3,8 +3,8 @@ package service
 import (
 	"context"
 	"errors"
-	"github.com/Rinai-R/Gocument/DataBase/Document/dao"
 	"github.com/Rinai-R/Gocument/Logger"
+	dao2 "github.com/Rinai-R/Gocument/Server/Document/DataBase/dao"
 	pb "github.com/Rinai-R/Gocument/Server/Document/rpc"
 	"github.com/Rinai-R/Gocument/Utils/Error"
 	"github.com/Rinai-R/Gocument/Utils/Error/ErrCode"
@@ -12,7 +12,7 @@ import (
 )
 
 func (*DocumentServer) Delete(c context.Context, req *pb.DeleteRequest) (*pb.DeleteResponse, error) {
-	id, err := dao.GetId(c, req.Username)
+	id, err := dao2.GetId(c, req.Username)
 	if err != nil {
 		Logger.Logger.Debug("Service: Unknown username " + err.Error())
 	}
@@ -21,7 +21,7 @@ func (*DocumentServer) Delete(c context.Context, req *pb.DeleteRequest) (*pb.Del
 		UserId: id,
 	}
 
-	if err = dao.Delete(c, document); err != nil {
+	if err = dao2.Delete(c, document); err != nil {
 		Logger.Logger.Debug("Service: Delete Error " + err.Error())
 		if errors.Is(err, Error.NoDocumentFoundWithToken) {
 			return &pb.DeleteResponse{

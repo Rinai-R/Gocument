@@ -2,9 +2,9 @@ package dao
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/models"
 	"github.com/olivere/elastic/v7"
 	"reflect"
@@ -19,7 +19,7 @@ func Search(ctx context.Context, Doc models.SearchDocument) []models.ElasticDocu
 			elastic.NewMatchQuery("user_id", Doc.UserId),
 		)
 	search, err := DB.ES.Search().
-		Index(conf.DB.ElasticSearch.IndexName).
+		Index(conf.DocDB.ElasticSearch.IndexName).
 		Query(query).
 		Do(ctx)
 	if err != nil {

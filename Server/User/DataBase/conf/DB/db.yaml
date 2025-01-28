@@ -1,0 +1,29 @@
+MySQL:
+  Addr: "192.168.195.129:3306"
+  UserName: "root"
+  Password: "123456"
+  DBName: "test"
+
+Redis:
+  Addr: "192.168.195.129:6379"
+  UserName: "root"
+  Password: "123456"
+  DBName: "0"
+
+ElasticSearch:
+  Addr: "http://192.168.195.129:9200"
+  IndexName: "documents"
+  Sensitive: "skeys"
+
+Skey:
+  Keys:
+    - 饼干
+    - 坏蛋
+    - 笨蛋
+    - 可爱
+    - 原神启动
+    - 蓝山
+    - 3G芯片
+
+
+#需要其他关键词审查可自行添加，采取elasticsearch分词

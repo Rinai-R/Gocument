@@ -2,9 +2,9 @@ package dao
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/models"
 	"strconv"
 )
@@ -40,7 +40,7 @@ func Create(ctx context.Context, document models.Document) error {
 		UpdateAt:  document.UpdateAt,
 	}
 	do, err := DB.ES.Index().
-		Index(conf.DB.ElasticSearch.IndexName).
+		Index(conf.DocDB.ElasticSearch.IndexName).
 		Id(ESDocument.Id).
 		BodyJson(ESDocument).
 		Do(ctx)

@@ -5,10 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/init.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/MySQL/mysql.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/Redis/redis.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/Sensitive.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/MySQL/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/MySQL/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/Redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/Redis/redis.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Check.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Edit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Grant.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Search.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/Alter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/LoginAndRegister.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/PersonalPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Check.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Edit.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Get.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Grant.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/service/Search.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +78,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -93,11 +131,11 @@
       <recent name="D:\New\project\Gocument\Gocument\Server" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\New\project\Gocument\Server\Document\DataBase" />
+      <recent name="D:\New\project\Gocument\Server\User\DataBase" />
+      <recent name="D:\New\project\Gocument\Server\User" />
       <recent name="D:\New\project\Gocument\DataBase\DB\ElasticSearch" />
       <recent name="D:\New\project\Gocument\Utils\Sensitive" />
-      <recent name="D:\New\project\Gocument\Registry\Nacos" />
-      <recent name="D:\New\project\Gocument\Gocument\index" />
-      <recent name="D:\New\project\Gocument\Gocument\DataBase\User" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -159,8 +197,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
         <item itemvalue="Go 构建.go build main.go (1)" />
+        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
       </list>
     </recent_temporary>
   </component>

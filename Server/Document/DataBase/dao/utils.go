@@ -3,9 +3,9 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/Rinai-R/Gocument/DataBase/DB"
-	conf "github.com/Rinai-R/Gocument/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/Logger"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
+	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
 	"github.com/Rinai-R/Gocument/models"
 	"github.com/olivere/elastic/v7"
 	"math/rand"
@@ -59,7 +59,7 @@ func SensitiveCheck(ctx context.Context, str string) bool {
 
 	// 根据信息查询，是否命中敏感词汇
 	searchResult, err := DB.ES.Search().
-		Index(conf.DB.ElasticSearch.Sensitive).
+		Index(conf.DocDB.ElasticSearch.Sensitive).
 		Query(matchQuery).
 		TrackTotalHits(true). // 跟踪总命中数
 		Size(100).
@@ -68,7 +68,7 @@ func SensitiveCheck(ctx context.Context, str string) bool {
 		Logger.Logger.Debug("Sensitive Check Error " + err.Error())
 		return false
 	}
-	msg := fmt.Sprintf("Dao: 敏感词命中%v个",searchResult.Hits.TotalHits.Value)
+	msg := fmt.Sprintf("Dao: 敏感词命中%v个", searchResult.Hits.TotalHits.Value)
 	Logger.Logger.Debug(msg)
 	// 处理响应
 	totalHits := searchResult.Hits.TotalHits.Value

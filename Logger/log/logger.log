@@ -17,3 +17,129 @@
 2025-01-27T16:02:28.108+0800	ERROR	Search Error
 2025-01-27T16:07:41.491+0800	DEBUG	解析token成功
 2025-01-27T16:07:41.655+0800	DEBUG	API: AlterUserInfo ok
+2025-01-27T22:07:07.698+0800	DEBUG	Viper: Registry OK
+2025-01-27T22:07:08.078+0800	DEBUG	Nacos init success
+2025-01-27T22:07:08.104+0800	PANIC	Client: service host is empty
+2025-01-27T22:07:11.448+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:07:11.470+0800	DEBUG	Redis OK
+2025-01-27T22:07:11.500+0800	PANIC	Error 1045 (28000): Access denied for user 'root'@'192.168.195.1' (using password: YES)mysql connect fail
+2025-01-27T22:07:15.262+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:07:15.272+0800	DEBUG	Redis OK
+2025-01-27T22:07:15.290+0800	PANIC	Error 1045 (28000): Access denied for user 'root'@'192.168.195.1' (using password: YES)mysql connect fail
+2025-01-27T22:07:45.089+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:07:45.111+0800	DEBUG	Redis OK
+2025-01-27T22:07:45.120+0800	PANIC	Error 1049 (42000): Unknown database 'test'mysql connect fail
+2025-01-27T22:07:45.478+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:07:45.493+0800	DEBUG	Redis OK
+2025-01-27T22:07:45.504+0800	PANIC	Error 1049 (42000): Unknown database 'test'mysql connect fail
+2025-01-27T22:09:39.296+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:09:39.348+0800	DEBUG	Redis OK
+2025-01-27T22:09:39.717+0800	DEBUG	Mysql OK
+2025-01-27T22:09:39.722+0800	DEBUG	Elasticsearch Connected
+2025-01-27T22:09:39.860+0800	DEBUG	Create Document Index OK
+2025-01-27T22:09:39.999+0800	DEBUG	Sensitive Index Created
+2025-01-27T22:09:40.001+0800	DEBUG	Viper: DataBase OK
+2025-01-27T22:09:40.014+0800	DEBUG	Redis OK
+2025-01-27T22:09:40.027+0800	DEBUG	Elasticsearch OK
+2025-01-27T22:09:40.028+0800	DEBUG	Viper: Registry OK
+2025-01-27T22:09:40.163+0800	DEBUG	Mysql OK
+2025-01-27T22:09:40.166+0800	DEBUG	Elasticsearch Connected
+2025-01-27T22:09:40.188+0800	DEBUG	Elasticsearch OK
+2025-01-27T22:09:40.189+0800	DEBUG	Viper: Registry OK
+2025-01-27T22:09:40.242+0800	DEBUG	Nacos init success
+2025-01-27T22:09:40.290+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-27T22:09:40.291+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-27T22:09:40.384+0800	DEBUG	Nacos init success
+2025-01-27T22:09:40.394+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-27T22:09:40.394+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-27T22:09:45.737+0800	DEBUG	Viper: Registry OK
+2025-01-27T22:09:45.949+0800	DEBUG	Nacos init success
+2025-01-27T22:09:45.992+0800	DEBUG	Client: Document client OK
+2025-01-27T22:09:46.001+0800	DEBUG	Client: User client OK
+2025-01-27T22:10:48.393+0800	DEBUG	Dao: 敏感词命中1个
+2025-01-27T22:10:48.393+0800	DEBUG	Service: Sensitive Check
+2025-01-27T22:10:48.395+0800	DEBUG	API: InternalErrorSensitiveKeys: Sensitive Keys exist
+2025-01-27T22:10:55.366+0800	DEBUG	Dao: 敏感词命中0个
+2025-01-27T22:10:55.566+0800	DEBUG	DAO: User Created Success
+2025-01-27T22:10:55.567+0800	DEBUG	Service: User Success
+2025-01-27T22:10:55.567+0800	DEBUG	API: register success
+2025-01-27T22:11:00.921+0800	DEBUG	DAO: Login OK 
+2025-01-27T22:11:00.922+0800	DEBUG	Service: User Success
+2025-01-27T22:11:00.923+0800	DEBUG	API: login ok
+2025-01-27T22:11:00.923+0800	DEBUG	产生token成功
+2025-01-27T22:11:21.261+0800	DEBUG	解析token成功
+2025-01-27T22:11:21.304+0800	DEBUG	Dao: Redis Cache Write UserId
+2025-01-27T22:11:21.313+0800	DEBUG	Dao: 敏感词命中0个
+2025-01-27T22:11:21.369+0800	DEBUG	Dao: ES Index Created, Id: 1
+2025-01-27T22:11:21.369+0800	DEBUG	Document created
+2025-01-27T22:11:21.375+0800	DEBUG	Create Document OK
+2025-01-27T22:11:53.160+0800	DEBUG	token has invalid claims: token is expired
+2025-01-27T22:12:00.135+0800	DEBUG	解析token成功
+2025-01-27T22:12:00.135+0800	DEBUG	BindError EOF
+2025-01-27T22:12:15.261+0800	DEBUG	解析token成功
+2025-01-27T22:12:15.265+0800	DEBUG	response generate ok
+2025-01-28T14:15:32.455+0800	PANIC	Viper: open ./DataBase/conf/DocDB/db.yaml: The system cannot find the path specified.
+2025-01-28T14:16:38.891+0800	PANIC	Viper: open ./Sever/Document/DataBase/conf/DocDB/db.yaml: The system cannot find the path specified.
+2025-01-28T14:17:40.480+0800	PANIC	Viper: open ./Sever/Document/DataBase/conf/DB/db.yaml: The system cannot find the path specified.
+2025-01-28T14:18:09.632+0800	DEBUG	Viper: DataBase OK
+2025-01-28T14:18:09.643+0800	DEBUG	Redis OK
+2025-01-28T14:18:09.918+0800	DEBUG	Mysql OK
+2025-01-28T14:18:09.929+0800	DEBUG	Elasticsearch Connected
+2025-01-28T14:18:09.961+0800	DEBUG	Elasticsearch OK
+2025-01-28T14:18:09.962+0800	DEBUG	Viper: Registry OK
+2025-01-28T14:18:10.177+0800	DEBUG	Nacos init success
+2025-01-28T14:18:10.208+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-28T14:18:10.209+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-28T14:22:47.881+0800	DEBUG	Viper: DataBase OK
+2025-01-28T14:22:47.893+0800	PANIC	Viper: open ./Server/User/DataBase/conf/UserDB/db.yaml: The system cannot find the path specified.
+2025-01-28T14:23:18.989+0800	DEBUG	Viper: DataBase OK
+2025-01-28T14:23:19.001+0800	DEBUG	Viper: DataBase OK
+2025-01-28T14:23:19.001+0800	DEBUG	Redis OK
+2025-01-28T14:23:19.164+0800	DEBUG	Mysql OK
+2025-01-28T14:23:19.169+0800	DEBUG	Elasticsearch Connected
+2025-01-28T14:23:19.192+0800	DEBUG	Elasticsearch OK
+2025-01-28T14:23:19.192+0800	DEBUG	Redis OK
+2025-01-28T14:23:19.347+0800	DEBUG	Mysql OK
+2025-01-28T14:23:19.349+0800	DEBUG	Elasticsearch Connected
+2025-01-28T14:23:19.368+0800	DEBUG	Elasticsearch OK
+2025-01-28T14:23:19.368+0800	DEBUG	Viper: Registry OK
+2025-01-28T14:23:19.560+0800	DEBUG	Nacos init success
+2025-01-28T14:23:19.569+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-28T14:23:19.569+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-28T14:23:26.183+0800	DEBUG	Viper: Registry OK
+2025-01-28T14:23:26.382+0800	DEBUG	Nacos init success
+2025-01-28T14:23:26.393+0800	DEBUG	Client: Document client OK
+2025-01-28T14:23:26.400+0800	DEBUG	Client: User client OK
+2025-01-28T14:24:19.295+0800	DEBUG	Dao: 敏感词命中1个
+2025-01-28T14:24:19.295+0800	DEBUG	Service: Sensitive Check
+2025-01-28T14:24:19.296+0800	DEBUG	API: InternalErrorSensitiveKeys: Sensitive Keys exist
+2025-01-28T14:24:26.335+0800	DEBUG	Service: User Username Length Error
+2025-01-28T14:24:26.335+0800	DEBUG	API: user name length error
+2025-01-28T14:24:32.904+0800	DEBUG	Dao: 敏感词命中0个
+2025-01-28T14:24:33.090+0800	DEBUG	DAO: User Created Success
+2025-01-28T14:24:33.090+0800	DEBUG	Service: User Success
+2025-01-28T14:24:33.090+0800	DEBUG	API: register success
+2025-01-28T14:24:44.585+0800	DEBUG	DAO: Login OK 
+2025-01-28T14:24:44.585+0800	DEBUG	Service: User Success
+2025-01-28T14:24:44.586+0800	DEBUG	API: login ok
+2025-01-28T14:24:44.586+0800	DEBUG	产生token成功
+2025-01-28T14:25:03.989+0800	DEBUG	解析token成功
+2025-01-28T14:25:04.043+0800	DEBUG	Dao: Redis Cache Write UserId
+2025-01-28T14:25:04.060+0800	DEBUG	Dao: document not found record not found
+2025-01-28T14:25:04.060+0800	DEBUG	Dao: Not Found
+2025-01-28T14:25:04.061+0800	DEBUG	Api: Document Not Found
+2025-01-28T14:25:12.434+0800	DEBUG	解析token成功
+2025-01-28T14:25:12.438+0800	DEBUG	Dao: Redis Cache Read UserId
+2025-01-28T14:25:12.442+0800	DEBUG	Dao: Redis Cache Write IsPrivate 
+2025-01-28T14:25:12.448+0800	DEBUG	Dao: it's private and you are not permitted
+2025-01-28T14:25:12.448+0800	DEBUG	Service: OK
+2025-01-28T14:25:12.448+0800	DEBUG	Api: No Permission
+2025-01-28T14:25:22.005+0800	DEBUG	token has invalid claims: token is expired
+2025-01-28T14:25:30.055+0800	DEBUG	DAO: Login OK 
+2025-01-28T14:25:30.055+0800	DEBUG	Service: User Success
+2025-01-28T14:25:30.056+0800	DEBUG	API: login ok
+2025-01-28T14:25:30.056+0800	DEBUG	产生token成功
+2025-01-28T14:25:40.531+0800	DEBUG	解析token成功
+2025-01-28T14:25:40.531+0800	DEBUG	BindError EOF
+2025-01-28T14:25:50.192+0800	DEBUG	解析token成功
+2025-01-28T14:25:50.199+0800	DEBUG	response generate ok
