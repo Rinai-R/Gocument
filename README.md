@@ -1,6 +1,7 @@
 # Gocument
 
 **Gocument** 是一个**在线文档协作平台**，目前正在完善中...
+运行环境需要nacos/redis/mysql/elasticsearch，地址/用户名/密码需自行配置。
 
 ## 实现功能
 
