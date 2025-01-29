@@ -5,45 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/init.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/MySQL/mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/Redis/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bee7392f-b0a3-4b82-abde-1a5ebe66e547.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bee7392f-b0a3-4b82-abde-1a5ebe66e547.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/Sensitive.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/ElasticSearch/Sensitive.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/ElasticSearch/elasticsearch.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/ElasticSearch/elasticsearch.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/MySQL/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/MySQL/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/Redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/DB/Redis/redis.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/DB/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Delete.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Edit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Get.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Grant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/Search.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/Document/dao/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/utils.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/LoginAndRegister.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/User/dao/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/dao/PersonalPage.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase/conf/DB/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/init.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Check.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Create.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Create.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Delete.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Edit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Get.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Get.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Grant.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Grant.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Document/service/Search.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/service/Search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/Alter.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/Alter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/LoginAndRegister.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/service/PersonalPage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +31,14 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.2.windows-amd64" />
+  <component name="GOROOT" url="file://$PROJECT_DIR$/../sdk/go1.23.5" />
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -71,7 +50,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Rinai-R/Gocument.git&quot;,
-    &quot;accountId&quot;: &quot;61d5a169-71ef-4d7d-af66-3b0737a09887&quot;
+    &quot;accountId&quot;: &quot;750218cd-0dbb-43c7-926e-0c1952ee8921&quot;
   }
 }</component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -107,7 +86,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/New/project/Gocument/Server/Document&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rinai&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -122,6 +101,35 @@
     ]
   }
 }</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2732667" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.33001047" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.33001047" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33001047" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.33001047" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="make" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.3301062" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\New\project\Gocument\Server\Document" />
@@ -145,7 +153,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build main.go (2)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -172,6 +180,14 @@
       <filePath value="$PROJECT_DIR$/Server/User/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Gocument" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Server/Document/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -192,12 +208,14 @@
     </configuration>
     <list>
       <item itemvalue="Go 构建.go build main.go" />
+      <item itemvalue="Go 构建.go build main.go (2)" />
       <item itemvalue="Go 构建.go build main.go (1)" />
       <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go 构建.go build main.go (1)" />
+        <item itemvalue="Go 构建.go build main.go (2)" />
         <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
       </list>
     </recent_temporary>
@@ -205,12 +223,22 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-d82d926f19eb-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.22562.186" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-GO-243.22562.186" />
+        <option value="bundled-gosdk-2f6e6cc45a70-76709e8e2002-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-251.17181.28" />
+        <option value="bundled-js-predefined-d6986cc7102b-b81319f9767f-JavaScript-GO-251.17181.28" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="" />
+      <created>1738146770050</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738146770050</updated>
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -219,7 +247,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

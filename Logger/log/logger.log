@@ -143,3 +143,97 @@
 2025-01-28T14:25:40.531+0800	DEBUG	BindError EOF
 2025-01-28T14:25:50.192+0800	DEBUG	解析token成功
 2025-01-28T14:25:50.199+0800	DEBUG	response generate ok
+2025-01-29T19:03:04.914+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:03:04.914+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:03:04.914+0800	DEBUG	Redis OK
+2025-01-29T19:03:04.989+0800	DEBUG	Mysql OK
+2025-01-29T19:03:04.990+0800	PANIC	Get "http://localhost:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:03:07.054+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:03:07.054+0800	DEBUG	Redis OK
+2025-01-29T19:03:07.122+0800	DEBUG	Mysql OK
+2025-01-29T19:03:07.123+0800	PANIC	Get "http://localhost:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:04:30.876+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:30.876+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:30.877+0800	DEBUG	Redis OK
+2025-01-29T19:04:30.944+0800	DEBUG	Mysql OK
+2025-01-29T19:04:30.946+0800	PANIC	Get "http://127.0.0.1:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:04:32.129+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:32.130+0800	DEBUG	Redis OK
+2025-01-29T19:04:32.192+0800	DEBUG	Mysql OK
+2025-01-29T19:04:32.194+0800	PANIC	Get "http://127.0.0.1:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:04:33.300+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:33.300+0800	DEBUG	Redis OK
+2025-01-29T19:04:33.365+0800	DEBUG	Mysql OK
+2025-01-29T19:04:33.366+0800	PANIC	Get "http://127.0.0.1:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:04:47.661+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:47.661+0800	DEBUG	Redis OK
+2025-01-29T19:04:47.720+0800	DEBUG	Mysql OK
+2025-01-29T19:04:47.720+0800	PANIC	parse "127.0.0.1:9200": first path segment in URL cannot contain colonelastic connect fail
+2025-01-29T19:04:48.825+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:48.825+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:48.825+0800	DEBUG	Redis OK
+2025-01-29T19:04:48.901+0800	DEBUG	Mysql OK
+2025-01-29T19:04:48.901+0800	PANIC	parse "127.0.0.1:9200": first path segment in URL cannot contain colonelastic connect fail
+2025-01-29T19:04:51.817+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:04:51.817+0800	DEBUG	Redis OK
+2025-01-29T19:04:51.873+0800	DEBUG	Mysql OK
+2025-01-29T19:04:51.873+0800	PANIC	parse "127.0.0.1:9200": first path segment in URL cannot contain colonelastic connect fail
+2025-01-29T19:05:14.804+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:05:14.804+0800	DEBUG	Redis OK
+2025-01-29T19:05:14.855+0800	DEBUG	Mysql OK
+2025-01-29T19:05:14.856+0800	PANIC	Get "http://localhost:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:05:15.843+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:05:15.844+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:05:15.844+0800	DEBUG	Redis OK
+2025-01-29T19:05:15.895+0800	DEBUG	Mysql OK
+2025-01-29T19:05:15.896+0800	PANIC	Get "http://localhost:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:07:15.902+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:15.902+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:15.902+0800	DEBUG	Redis OK
+2025-01-29T19:07:15.958+0800	DEBUG	Mysql OK
+2025-01-29T19:07:15.958+0800	PANIC	Get "http://127.0.0.1:9200/": dial tcp 127.0.0.1:9200: connect: connection refusedelastic connect fail
+2025-01-29T19:07:53.556+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:53.556+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:53.556+0800	DEBUG	Redis OK
+2025-01-29T19:07:53.644+0800	DEBUG	Mysql OK
+2025-01-29T19:07:53.646+0800	PANIC	Get "http://127.0.0.1:9200/": read tcp 127.0.0.1:49018->127.0.0.1:9200: read: connection reset by peerelastic connect fail
+2025-01-29T19:07:54.429+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:54.429+0800	DEBUG	Redis OK
+2025-01-29T19:07:54.513+0800	DEBUG	Mysql OK
+2025-01-29T19:07:54.514+0800	PANIC	Get "http://127.0.0.1:9200/": EOFelastic connect fail
+2025-01-29T19:07:58.959+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:07:58.960+0800	DEBUG	Redis OK
+2025-01-29T19:07:59.035+0800	DEBUG	Mysql OK
+2025-01-29T19:07:59.123+0800	DEBUG	Elasticsearch Connected
+2025-01-29T19:07:59.199+0800	DEBUG	Elasticsearch OK
+2025-01-29T19:07:59.200+0800	DEBUG	Viper: Registry OK
+2025-01-29T19:07:59.674+0800	DEBUG	Nacos init success
+2025-01-29T19:07:59.726+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10002 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:Document GroupName:Gocument Ephemeral:true},result:true
+2025-01-29T19:07:59.726+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-01-29T19:08:00.660+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:08:00.661+0800	DEBUG	Viper: DataBase OK
+2025-01-29T19:08:00.661+0800	DEBUG	Redis OK
+2025-01-29T19:08:00.735+0800	DEBUG	Mysql OK
+2025-01-29T19:08:00.741+0800	DEBUG	Elasticsearch Connected
+2025-01-29T19:08:00.784+0800	DEBUG	Elasticsearch OK
+2025-01-29T19:08:00.784+0800	DEBUG	Redis OK
+2025-01-29T19:08:00.840+0800	DEBUG	Mysql OK
+2025-01-29T19:08:00.841+0800	DEBUG	Elasticsearch Connected
+2025-01-29T19:08:00.873+0800	DEBUG	Elasticsearch OK
+2025-01-29T19:08:00.874+0800	DEBUG	Viper: Registry OK
+2025-01-29T19:08:01.041+0800	DEBUG	Nacos init success
+2025-01-29T19:08:01.047+0800	DEBUG	RegisterServiceInstance,param:{Ip:127.0.0.1 Port:10001 Weight:10 Enable:true Healthy:true Metadata:map[idc:shanghai] ClusterName:cluster1 ServiceName:User GroupName:Gocument Ephemeral:true},result:true
+2025-01-29T19:08:01.047+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-01-29T19:08:04.887+0800	DEBUG	Viper: Registry OK
+2025-01-29T19:08:05.070+0800	DEBUG	Nacos init success
+2025-01-29T19:08:05.088+0800	DEBUG	Client: Document client OK
+2025-01-29T19:08:05.097+0800	DEBUG	Client: User client OK
+2025-01-29T19:36:30.141+0800	DEBUG	token has invalid claims: token is expired
+2025-01-29T19:36:49.945+0800	DEBUG	DAO: Login OK 
+2025-01-29T19:36:49.945+0800	DEBUG	Service: User Success
+2025-01-29T19:36:49.947+0800	DEBUG	API: login ok
+2025-01-29T19:36:49.947+0800	DEBUG	产生token成功
+2025-01-29T19:37:04.476+0800	DEBUG	解析token成功
+2025-01-29T19:37:04.476+0800	DEBUG	BindError EOF
+2025-01-29T19:37:14.091+0800	DEBUG	解析token成功
+2025-01-29T19:37:14.098+0800	DEBUG	response generate ok

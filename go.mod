@@ -5,7 +5,6 @@ go 1.23.2
 require (
 	github.com/cloudwego/hertz v0.9.5
 	github.com/golang-jwt/jwt/v5 v5.2.1
-	github.com/gorilla/websocket v1.5.3
 	github.com/hertz-contrib/websocket v0.2.0
 	github.com/nacos-group/nacos-sdk-go/v2 v2.2.7
 	github.com/olivere/elastic/v7 v7.0.32
