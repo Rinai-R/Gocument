@@ -1,13 +1,13 @@
 MySQL:
   Addr: "127.0.0.1:3306"
   UserName: "root"
-  Password: "123456"
+  Password: "~Cy710822"
   DBName: "test"
 
 Redis:
   Addr: "127.0.0.1:6379"
   UserName: "root"
-  Password: "123456"
+  Password: "~Cy710822"
   DBName: "0"
 
 ElasticSearch:

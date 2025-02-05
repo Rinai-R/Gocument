@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bee7392f-b0a3-4b82-abde-1a5ebe66e547.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/bee7392f-b0a3-4b82-abde-1a5ebe66e547.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d3134b59-0148-46a4-92a6-553f6f7949a8.xml" afterDir="false" />
+    <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="添加一些注释">
+      <change afterPath="$PROJECT_DIR$/README_2.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
       <list>
         <option value="HTML File" />
         <option value="Go File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -108,18 +104,18 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2732667" />
-      <window_info id="Commit" order="1" weight="0.25" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7418525" visible="true" weight="0.23739192" />
+      <window_info id="Commit" order="1" weight="0.23703936" />
+      <window_info id="Structure" order="2" sideWeight="0.25814754" side_tool="true" weight="0.23703936" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="0" visible="true" weight="0.33001047" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.3132214" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.33001047" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33001047" />
-      <window_info anchor="bottom" id="Services" order="4" weight="0.33001047" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.3132214" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.3132214" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="make" side_tool="true" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
@@ -264,6 +260,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="运行在虚拟机上面了" />
+    <MESSAGE value="添加一些注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加一些注释" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
