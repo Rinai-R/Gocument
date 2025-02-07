@@ -1092,7 +1092,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="293" parent="1" name="test">
-      <LastIntrospectionLocalTimestamp>2025-01-28.06:23:32</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-02-07.14:12:59</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="294" parent="1" name="root">
@@ -25287,7 +25287,7 @@ tenant_id</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="4814" parent="692" name="id">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>
@@ -25372,7 +25372,7 @@ user_id</ColNames>
       <Type>btree</Type>
     </index>
     <column id="4831" parent="694" name="id">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>bigint|0s</StoredType>

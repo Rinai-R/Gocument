@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="添加一些注释">
-      <change afterPath="$PROJECT_DIR$/README_2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6690a521-40f0-43bd-95e9-fb18a70f7cb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logger/log/logger.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Registry/conf/Registry/registry.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/DataBase/dao/Edit.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/dao/Edit.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +28,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$PROJECT_DIR$/../sdk/go1.23.5" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.2.windows-amd64" />
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -43,12 +44,12 @@
     &quot;assignee&quot;: &quot;Rinai-R&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rinai-R/Gocument.git&quot;,
-    &quot;accountId&quot;: &quot;750218cd-0dbb-43c7-926e-0c1952ee8921&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rinai-R/Gocument.git",
+    "accountId": "61d5a169-71ef-4d7d-af66-3b0737a09887"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -64,39 +65,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/Document.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build init.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go (1).executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go (2).executor&quot;: &quot;Run&quot;,
-    &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/rinai&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.用户定义的文件类型&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Go 构建.go build github.com/Rinai-R/Gocument/Server/Document.executor": "Run",
+    "Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor": "Run",
+    "Go 构建.go build init.go.executor": "Run",
+    "Go 构建.go build main.go (1).executor": "Run",
+    "Go 构建.go build main.go (2).executor": "Run",
+    "Go 构建.go build main.go.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "C:/Users/chenyue",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.用户定义的文件类型"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;,
-      &quot;redis&quot;,
-      &quot;mongo&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "redis",
+      "mongo"
     ]
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -149,7 +150,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go (2)">
+  <component name="RunManager" selected="Go 构建.go build main.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -157,15 +158,6 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build github.com/Rinai-R/Gocument/Server/Document" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Gocument" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="github.com/Rinai-R/Gocument/Server/Document" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/Server/Document/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -206,21 +198,19 @@
       <item itemvalue="Go 构建.go build main.go" />
       <item itemvalue="Go 构建.go build main.go (2)" />
       <item itemvalue="Go 构建.go build main.go (1)" />
-      <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Go 构建.go build main.go (1)" />
         <item itemvalue="Go 构建.go build main.go (2)" />
-        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Document" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-2f6e6cc45a70-76709e8e2002-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-251.17181.28" />
-        <option value="bundled-js-predefined-d6986cc7102b-b81319f9767f-JavaScript-GO-251.17181.28" />
+        <option value="bundled-gosdk-d297c17c1fbd-85c80fddc9a6-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.23654.166" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-GO-243.23654.166" />
       </set>
     </attachedChunks>
   </component>

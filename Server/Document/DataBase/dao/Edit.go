@@ -20,10 +20,15 @@ func Edit(ctx context.Context, document models.ElasticDocument) error {
 	document.CreateAt = doc.CreateAt
 	document.UpdateAt = doc.UpdateAt
 	document.IsPrivate = doc.IsPrivate
+	updateData := map[string]interface{}{
+		"title":     document.Title,
+		"content":   document.Content,
+		"update_at": document.UpdateAt,
+	}
 	_, err = DB.ES.Update().
 		Index(conf.DocDB.ElasticSearch.IndexName).
 		Id(document.Id).
-		Doc(document).
+		Doc(updateData).
 		Do(ctx)
 	if err != nil {
 		tx.Rollback()
