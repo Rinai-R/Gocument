@@ -2,6 +2,9 @@ package Client
 
 import (
 	"context"
+	"crypto/rsa"
+	"crypto/x509"
+	"encoding/pem"
 	pb "github.com/Rinai-R/Gocument/Server/Api/Func/Auth/Client/rpc"
 	"github.com/Rinai-R/Gocument/Server/Api/Initialize"
 	"github.com/Rinai-R/Gocument/pkg/Logger"
@@ -12,7 +15,7 @@ import (
 var (
 	AuthClient pb.AuthClient
 	AuthConn   *grpc.ClientConn
-	PublicKey  string
+	PublicKey  *rsa.PublicKey
 )
 
 func init() {
@@ -35,5 +38,7 @@ func init() {
 		Logger.Logger.Error("AuthClient: " + err.Error())
 		return
 	}
-	PublicKey = res.PublicKey
+	block, _ := pem.Decode([]byte(res.PublicKey))
+	publicKeyInterface, _ := x509.ParsePKIXPublicKey(block.Bytes)
+	PublicKey = publicKeyInterface.(*rsa.PublicKey)
 }

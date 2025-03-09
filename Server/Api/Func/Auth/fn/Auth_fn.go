@@ -26,7 +26,7 @@ func ParseToken(tokenString string) (username string, err error) {
 		return "", err
 	}
 	if claims, ok1 := token.Claims.(jwt.MapClaims); ok1 {
-		message := claims["GetName"].(string)
+		message := claims["sub"].(string)
 		Logger.Logger.Debug("解析token成功")
 		return message, nil
 	}

@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	Initialize "github.com/Rinai-R/Gocument/Server/Auth/Registry"
+	Initialize "github.com/Rinai-R/Gocument/Server/Auth/Initialize"
 	"github.com/Rinai-R/Gocument/Server/Auth/handle"
 	pb "github.com/Rinai-R/Gocument/Server/Auth/rpc"
 	"github.com/Rinai-R/Gocument/pkg/Logger"
@@ -17,9 +17,9 @@ func main() {
 		Logger.Logger.Panic(err.Error())
 	}
 	Initialize.InitEtcd()
+	Initialize.InitKey()
 	grpcServer := grpc.NewServer(grpc.Creds(insecure.NewCredentials()))
-	AuthSrv := handle.NewAuthService()
-	pb.RegisterAuthServer(grpcServer, AuthSrv)
+	pb.RegisterAuthServer(grpcServer, handle.Authsrv)
 	Initialize.EtcdRegistry.ServiceRegister("Auth", "127.0.0.1:10003")
 
 	msg := fmt.Sprintf("grpc server listening at %v", listener.Addr())

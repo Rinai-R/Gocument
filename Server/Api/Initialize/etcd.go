@@ -17,9 +17,9 @@ type Registry struct {
 
 var ETCD *Registry
 
-func InitETCD() {
+func init() {
 	etcd, err := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"192.168.195.129:2379"},
+		Endpoints:   []string{"localhost:2379"},
 		DialTimeout: 5 * time.Second,
 	})
 	if err != nil {

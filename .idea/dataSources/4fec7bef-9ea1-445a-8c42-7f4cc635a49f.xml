@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@192.168.195.129 [2]">
+  <database-model serializer="dbm" dbms="ELASTICSEARCH" family-id="ELASTICSEARCH" format-version="4.53">
+    <root id="1">
+      <Dbms>ELASTICSEARCH</Dbms>
+      <DefaultCasing>exact</DefaultCasing>
+      <ServerVersion>8.17</ServerVersion>
+    </root>
+    <database id="2" parent="1">
+      <Current>1</Current>
+    </database>
+    <schema id="3" parent="2">
+      <Current>1</Current>
+    </schema>
+  </database-model>
+</dataSource>
