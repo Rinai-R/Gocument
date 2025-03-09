@@ -3,11 +3,11 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
-	"github.com/Rinai-R/Gocument/Utils/Error"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Error"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	"github.com/Rinai-R/Gocument/pkg/models"
 	"strconv"
 )
 

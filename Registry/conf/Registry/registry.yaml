@@ -1,6 +1,0 @@
-nacos:
-  Addr: "localhost"
-  Port: 8848
-  Namespace: "8cffe206-f12d-4f1e-b8a2-1c8083fd9379"
-  Username: "nacos"
-  Password: "123456"

@@ -3,10 +3,10 @@ package dao
 import (
 	"context"
 	"fmt"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	models2 "github.com/Rinai-R/Gocument/pkg/models"
 	"github.com/olivere/elastic/v7"
 	"math/rand"
 	"strconv"
@@ -27,7 +27,7 @@ func GetId(ctx context.Context, username string) (int, error) {
 		return strconv.Atoi(ans)
 	}
 	//redis没读取到，去mysql里面读取
-	var user models.User
+	var user models2.User
 	res := DB.Db.Where("username = ?", username).Select("id").First(&user)
 	if res.Error != nil {
 		Logger.Logger.Debug("Dao: InternalError " + res.Error.Error())
@@ -47,7 +47,7 @@ func IsHost(ctx context.Context, username string, DocumentId int) error {
 	if err != nil {
 		return err
 	}
-	res := DB.Db.Model(&models.Document{}).Where("user_id = ? AND id = ?", id, DocumentId).First(&models.Document{})
+	res := DB.Db.Model(&models2.Document{}).Where("user_id = ? AND id = ?", id, DocumentId).First(&models2.Document{})
 	if res.Error != nil {
 		return res.Error
 	}

@@ -2,10 +2,10 @@ package dao
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	"github.com/Rinai-R/Gocument/pkg/models"
 	"github.com/olivere/elastic/v7"
 	"reflect"
 )

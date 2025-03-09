@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option go_package=".;pb";
+
+message GenerateTokenRequest {
+  string username = 1;
+}
+
+message GenerateTokenResponse {
+  string token = 1;
+}
+
+message GetPublicKeyResponse {
+  string publicKey = 1;
+}
+
+message GetPublicKeyRequest {
+
+}
+
+service Auth {
+  rpc GenerateToken(GenerateTokenRequest) returns(GenerateTokenResponse);
+  rpc GetPublicKey(GetPublicKeyRequest) returns(GetPublicKeyResponse);
+}

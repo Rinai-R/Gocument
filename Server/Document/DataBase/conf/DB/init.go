@@ -1,10 +1,10 @@
 package conf
 
 import (
-	"github.com/Rinai-R/Gocument/Logger"
 	ElasticSearch2 "github.com/Rinai-R/Gocument/Server/Document/DataBase/DB/ElasticSearch"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB/MySQL"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB/Redis"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
 	"github.com/spf13/viper"
 )
 

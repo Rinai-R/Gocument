@@ -7,7 +7,6 @@
     <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="添加一些注释">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chenyue&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chenyue/Desktop/PrOJECT/Gocument&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -204,8 +203,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-d297c17c1fbd-85c80fddc9a6-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.23654.166" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-GO-243.23654.166" />
+        <option value="bundled-gosdk-d297c17c1fbd-57c114c3cede-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-243.25659.52" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-GO-243.25659.52" />
       </set>
     </attachedChunks>
   </component>

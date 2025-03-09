@@ -2,10 +2,10 @@ package DB
 
 import (
 	"context"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB/ElasticSearch"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/conf/DB"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	models2 "github.com/Rinai-R/Gocument/pkg/models"
 	"github.com/olivere/elastic/v7"
 	"github.com/redis/go-redis/v9"
 	"gorm.io/driver/mysql"
@@ -34,15 +34,15 @@ func init() {
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "mysql connect fail")
 	}
-	err = Db.AutoMigrate(models.User{})
+	err = Db.AutoMigrate(models2.User{})
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "mysql Document migrate fail")
 	}
-	err = Db.AutoMigrate(models.Document{})
+	err = Db.AutoMigrate(models2.Document{})
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "mysql Document migrate fail")
 	}
-	err = Db.AutoMigrate(models.Permission{})
+	err = Db.AutoMigrate(models2.Permission{})
 	if err != nil {
 		Logger.Logger.Panic(err.Error() + "mysql Document migrate fail")
 	}
@@ -74,7 +74,7 @@ func init() {
 	}
 
 	if !exists {
-		_, err2 := ES.CreateIndex(IndexName).Body(models.EsDocument).Do(context.Background())
+		_, err2 := ES.CreateIndex(IndexName).Body(models2.EsDocument).Do(context.Background())
 		if err2 != nil {
 			Logger.Logger.Panic(err2.Error() + " Document Create Index Request Error")
 		}

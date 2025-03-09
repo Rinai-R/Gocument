@@ -2,11 +2,11 @@ package dao
 
 import (
 	"errors"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/User/DataBase/DB"
-	"github.com/Rinai-R/Gocument/Utils/Error"
-	"github.com/Rinai-R/Gocument/Utils/encrypt"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Error"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	"github.com/Rinai-R/Gocument/pkg/encrypt"
+	"github.com/Rinai-R/Gocument/pkg/models"
 	"gorm.io/gorm"
 	"strings"
 )

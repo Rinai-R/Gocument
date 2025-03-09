@@ -4,15 +4,15 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/Rinai-R/Gocument/Logger"
 	"github.com/Rinai-R/Gocument/Server/Document/DataBase/DB"
-	"github.com/Rinai-R/Gocument/models"
+	"github.com/Rinai-R/Gocument/pkg/Logger"
+	models2 "github.com/Rinai-R/Gocument/pkg/models"
 	"gorm.io/gorm"
 	"math/rand"
 	"time"
 )
 
-func Check(ctx context.Context, permission models.Permission) (error, string) {
+func Check(ctx context.Context, permission models2.Permission) (error, string) {
 	var IsPrivate bool
 	var Permission bool
 	key1 := fmt.Sprintf("DocuId:%v", permission.DocumentId)
@@ -33,7 +33,7 @@ func Check(ctx context.Context, permission models.Permission) (error, string) {
 		DB.Rdb.Expire(ctx, key1, time.Duration(mul)*time.Hour)
 	} else {
 		//没读取到，换mysql读取
-		res := DB.Db.Model(&models.Document{}).Where("id = ?", permission.DocumentId).Select("IsPrivate").First(&IsPrivate)
+		res := DB.Db.Model(&models2.Document{}).Where("id = ?", permission.DocumentId).Select("IsPrivate").First(&IsPrivate)
 		if res.Error != nil {
 			Logger.Logger.Debug("Dao: document not found " + res.Error.Error())
 			return res.Error, "notfound"
@@ -60,7 +60,7 @@ func Check(ctx context.Context, permission models.Permission) (error, string) {
 	} else {
 		//缓存没找到，继续在数据库中找，如果redis之前已经确认存在权限，那么就不需要执行这些代码
 		//检查对应用户和对应文档的权限
-		res := DB.Db.Model(&models.Permission{}).Where("document_id = ? AND user_id = ?", permission.DocumentId, permission.UserId).Select("type").First(&Permission)
+		res := DB.Db.Model(&models2.Permission{}).Where("document_id = ? AND user_id = ?", permission.DocumentId, permission.UserId).Select("type").First(&Permission)
 		if res.Error != nil {
 			if errors.Is(res.Error, gorm.ErrRecordNotFound) {
 				if IsPrivate {
