@@ -49,176 +49,165 @@
 
 ```bat
 Gocument
-│
-├───App
-│   │   main.go
-│   │
-│   ├───Func
-│   │   ├───Document
-│   │   │   ├───Api
-│   │   │   │       Create.go
-│   │   │   │       DeleteDocument.go
-│   │   │   │       Enter.go
-│   │   │   │       Grant.go
-│   │   │   │       Search.go
-│   │   │   │
-│   │   │   └───Client
-│   │   │       │   DocumentClient.go
-│   │   │       │
-│   │   │       └───rpc
-│   │   │               code
-│   │   │               document.pb.go
-│   │   │               document.proto
-│   │   │               document_grpc.pb.go
-│   │   │
-│   │   └───User
-│   │       ├───Api
-│   │       │       Alter.go
-│   │       │       Login.go
-│   │       │       PersonalPage.go
-│   │       │       Register.go
-│   │       │
-│   │       └───Client
-│   │           │   UserClient.go
-│   │           │
-│   │           └───rpc
-│   │                   code
-│   │                   user.pb.go
-│   │                   user.proto
-│   │                   user_grpc.pb.go
-│   │
-│   ├───Middleware
-│   │       jwt.go
-│   │       Token.go
-│   │
-│   └───Router
-│           router.go
-│
-├───Logger
-│   │   Logger.go
-│   │
-│   └───log
-│           logger.log
-│
-├───models
-│       Document.go
-│       Permission.go
-│       User.go
-│       websocket.go
-│
-├───Registry
-│   │   init.go
-│   │
-│   ├───conf
-│   │   └───Registry
-│   │           init.go
-│   │           registry.yaml
-│   │
-│   └───Nacos
-│           Func.go
-│           nacos.go
-│
-├───Server
-│   ├───Document
-│   │   │   main.go
-│   │   │
-│   │   ├───DataBase
-│   │   │   ├───conf
-│   │   │   │   └───DB
-│   │   │   │           db.yaml
-│   │   │   │           init.go
-│   │   │   │
-│   │   │   ├───dao
-│   │   │   │       Check.go
-│   │   │   │       Create.go
-│   │   │   │       Delete.go
-│   │   │   │       Edit.go
-│   │   │   │       Get.go
-│   │   │   │       Grant.go
-│   │   │   │       Search.go
-│   │   │   │       utils.go
-│   │   │   │
-│   │   │   └───DB
-│   │   │       │   init.go
-│   │   │       │
-│   │   │       ├───ElasticSearch
-│   │   │       │       elasticsearch.go
-│   │   │       │       Sensitive.go
-│   │   │       │
-│   │   │       ├───MySQL
-│   │   │       │       mysql.go
-│   │   │       │
-│   │   │       └───Redis
-│   │   │               redis.go
-│   │   │
-│   │   ├───rpc
-│   │   │       code
-│   │   │       document.pb.go
-│   │   │       document.proto
-│   │   │       document_grpc.pb.go
-│   │   │
-│   │   └───service
-│   │           Check.go
-│   │           Create.go
-│   │           Delete.go
-│   │           Edit.go
-│   │           Get.go
-│   │           Grant.go
-│   │           Search.go
-│   │
-│   └───User
-│       │   main.go
-│       │
-│       ├───DataBase
-│       │   ├───conf
-│       │   │   └───DB
-│       │   │           db.yaml
-│       │   │           init.go
-│       │   │
-│       │   ├───dao
-│       │   │       Alter.go
-│       │   │       LoginAndRegister.go
-│       │   │       PersonalPage.go
-│       │   │
-│       │   └───DB
-│       │       │   init.go
-│       │       │
-│       │       ├───ElasticSearch
-│       │       │       elasticsearch.go
-│       │       │       Sensitive.go
-│       │       │
-│       │       ├───MySQL
-│       │       │       mysql.go
-│       │       │
-│       │       └───Redis
-│       │               redis.go
-│       │
-│       ├───rpc
-│       │       code
-│       │       user.pb.go
-│       │       user.proto
-│       │       user_grpc.pb.go
-│       │
-│       └───service
-│               Alter.go
-│               LoginAndRegister.go
-│               PersonalPage.go
-│
-└───Utils
-    ├───encrypt
-    │       encrypt.go
-    │
-    ├───Error
-    │   │   Error.go
-    │   │
-    │   └───ErrCode
-    │           ErrorCode.go
-    │
-    ├───Rsp
-    │       model.go
-    │       Rsp.go
-    │
-    └───utils
-            Time.go
+├── docker-compose.yml
+├── go.mod
+├── go.sum
+├── keys
+│   ├── private.pem
+│   └── public.pem
+├── Makefile
+├── pkg
+│   ├── encrypt
+│   │   └── encrypt.go
+│   ├── Error
+│   │   ├── ErrCode
+│   │   │   └── ErrorCode.go
+│   │   └── Error.go
+│   ├── Logger
+│   │   ├── log
+│   │   │   └── logger.log
+│   │   └── Logger.go
+│   ├── models
+│   │   ├── Document.go
+│   │   ├── Permission.go
+│   │   ├── User.go
+│   │   └── websocket.go
+│   ├── Rsp
+│   │   ├── model.go
+│   │   └── Rsp.go
+│   └── utils
+│       └── Time.go
+├── README_2.md
+├── README.md
+└── Server
+    ├── Api
+    │   ├── Func
+    │   │   ├── Auth
+    │   │   │   ├── Client
+    │   │   │   │   ├── AuthClient.go
+    │   │   │   │   └── rpc
+    │   │   │   │       ├── Auth_grpc.pb.go
+    │   │   │   │       ├── Auth.pb.go
+    │   │   │   │       ├── Auth.proto
+    │   │   │   │       └── code
+    │   │   │   └── fn
+    │   │   │       └── Auth_fn.go
+    │   │   ├── Document
+    │   │   │   ├── Api
+    │   │   │   │   ├── Create.go
+    │   │   │   │   ├── DeleteDocument.go
+    │   │   │   │   ├── Enter.go
+    │   │   │   │   ├── Grant.go
+    │   │   │   │   └── Search.go
+    │   │   │   └── Client
+    │   │   │       ├── DocumentClient.go
+    │   │   │       └── rpc
+    │   │   │           ├── code
+    │   │   │           ├── document_grpc.pb.go
+    │   │   │           ├── document.pb.go
+    │   │   │           └── document.proto
+    │   │   └── User
+    │   │       ├── Api
+    │   │       │   ├── Alter.go
+    │   │       │   ├── Login.go
+    │   │       │   ├── PersonalPage.go
+    │   │       │   └── Register.go
+    │   │       └── Client
+    │   │           ├── rpc
+    │   │           │   ├── code
+    │   │           │   ├── user_grpc.pb.go
+    │   │           │   ├── user.pb.go
+    │   │           │   └── user.proto
+    │   │           └── UserClient.go
+    │   ├── Initialize
+    │   │   └── etcd.go
+    │   ├── main.go
+    │   ├── Middleware
+    │   │   └── Token.go
+    │   └── Router
+    │       └── router.go
+    ├── Auth
+    │   ├── handle
+    │   │   └── Auth.go
+    │   ├── Initialize
+    │   │   ├── key.go
+    │   │   └── Registry.go
+    │   ├── main.go
+    │   └── rpc
+    │       ├── Auth_grpc.pb.go
+    │       ├── Auth.pb.go
+    │       ├── Auth.proto
+    │       └── code
+    ├── Document
+    │   ├── DataBase
+    │   │   ├── conf
+    │   │   │   └── DB
+    │   │   │       ├── db.yaml
+    │   │   │       └── init.go
+    │   │   ├── dao
+    │   │   │   ├── Check.go
+    │   │   │   ├── Create.go
+    │   │   │   ├── Delete.go
+    │   │   │   ├── Edit.go
+    │   │   │   ├── Get.go
+    │   │   │   ├── Grant.go
+    │   │   │   ├── Search.go
+    │   │   │   └── utils.go
+    │   │   └── DB
+    │   │       ├── ElasticSearch
+    │   │       │   ├── elasticsearch.go
+    │   │       │   └── Sensitive.go
+    │   │       ├── init.go
+    │   │       ├── MySQL
+    │   │       │   └── mysql.go
+    │   │       └── Redis
+    │   │           └── redis.go
+    │   ├── handle
+    │   │   ├── Check.go
+    │   │   ├── Create.go
+    │   │   ├── Delete.go
+    │   │   ├── Edit.go
+    │   │   ├── Get.go
+    │   │   ├── Grant.go
+    │   │   └── Search.go
+    │   ├── main.go
+    │   ├── Registry
+    │   │   └── Registry.go
+    │   └── rpc
+    │       ├── code
+    │       ├── document_grpc.pb.go
+    │       ├── document.pb.go
+    │       └── document.proto
+    └── User
+        ├── DataBase
+        │   ├── conf
+        │   │   └── DB
+        │   │       ├── db.yaml
+        │   │       └── init.go
+        │   ├── dao
+        │   │   ├── Alter.go
+        │   │   ├── LoginAndRegister.go
+        │   │   └── PersonalPage.go
+        │   └── DB
+        │       ├── ElasticSearch
+        │       │   ├── elasticsearch.go
+        │       │   └── Sensitive.go
+        │       ├── init.go
+        │       ├── MySQL
+        │       │   └── mysql.go
+        │       └── Redis
+        │           └── redis.go
+        ├── handle
+        │   ├── Alter.go
+        │   ├── LoginAndRegister.go
+        │   └── PersonalPage.go
+        ├── main.go
+        ├── Registry
+        │   └── Registry.go
+        └── rpc
+            ├── code
+            ├── user_grpc.pb.go
+            ├── user.pb.go
+            └── user.proto
 ```
 
