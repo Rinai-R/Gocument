@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="添加一些注释">
+    <list default="true" id="c6054028-f375-43b9-9c07-5d269562e655" name="更改" comment="非对称加密token完结撒花，注册中心改用etcd，同时docker-compose一键启动支持！">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/bee7392f-b0a3-4b82-abde-1a5ebe66e547.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Auth/Initialize/Registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Auth/Initialize/Registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Document/Registry/Registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Document/Registry/Registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/DataBase/conf/DB/db.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/User/Registry/Registry.go" beforeDir="false" afterPath="$PROJECT_DIR$/Server/User/Registry/Registry.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/Logger/log/logger.log" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/Logger/log/logger.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Go File" />
         <option value="JavaScript File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -63,11 +73,13 @@
   &quot;keyToString&quot;: {
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/Auth.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/Document.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build github.com/Rinai-R/Gocument/Server/User.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build init.go.executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.go (1).executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.go (2).executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build main.go (3).executor&quot;: &quot;Run&quot;,
     &quot;Go 构建.go build main.go.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -77,7 +89,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/chenyue/Desktop/PrOJECT/Gocument&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chenyue/Desktop/PrOJECT/Gocument/Server/Api/Func/Auth/Client&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
@@ -88,7 +100,8 @@
     &quot;DatabaseDriversLRU&quot;: [
       &quot;mysql&quot;,
       &quot;redis&quot;,
-      &quot;mongo&quot;
+      &quot;mongo&quot;,
+      &quot;elasticsearch&quot;
     ]
   }
 }</component>
@@ -123,18 +136,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\New\project\Gocument\Server\Document" />
-      <recent name="D:\New\project\Gocument\Server\User" />
-      <recent name="D:\New\project\Gocument\Gocument\Server\Document" />
-      <recent name="D:\New\project\Gocument\Gocument\Server\User" />
-      <recent name="D:\New\project\Gocument\Gocument\Server" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Api\Func\Auth\Client" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Auth\rpc" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Auth" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Document" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Api\registry" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Auth\Initialize" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\pkg" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server\Auth" />
+      <recent name="C:\Users\chenyue\Desktop\PrOJECT\Gocument\Server" />
       <recent name="D:\New\project\Gocument\Server\Document\DataBase" />
-      <recent name="D:\New\project\Gocument\Server\User\DataBase" />
-      <recent name="D:\New\project\Gocument\Server\User" />
-      <recent name="D:\New\project\Gocument\DataBase\DB\ElasticSearch" />
-      <recent name="D:\New\project\Gocument\Utils\Sensitive" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -144,7 +157,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Go 构建.go build main.go">
+  <component name="RunManager" selected="Go 构建.go build main.go (3)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="Gocument" />
       <working_directory value="$PROJECT_DIR$" />
@@ -152,6 +165,15 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build github.com/Rinai-R/Gocument/Server/Auth" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Gocument" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/Rinai-R/Gocument/Server/Auth" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Server/Auth/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -168,6 +190,14 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/Server/Document/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Gocument" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Server/Api/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
@@ -190,11 +220,15 @@
     </configuration>
     <list>
       <item itemvalue="Go 构建.go build main.go" />
-      <item itemvalue="Go 构建.go build main.go (2)" />
+      <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Auth" />
       <item itemvalue="Go 构建.go build main.go (1)" />
+      <item itemvalue="Go 构建.go build main.go (2)" />
+      <item itemvalue="Go 构建.go build main.go (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go 构建.go build main.go (3)" />
+        <item itemvalue="Go 构建.go build github.com/Rinai-R/Gocument/Server/Auth" />
         <item itemvalue="Go 构建.go build main.go (1)" />
         <item itemvalue="Go 构建.go build main.go (2)" />
       </list>
@@ -248,7 +282,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="运行在虚拟机上面了" />
     <MESSAGE value="添加一些注释" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加一些注释" />
+    <MESSAGE value="使用非对称加密，新增Auth服务" />
+    <MESSAGE value="非对称加密token完结撒花，注册中心改用etcd，同时docker-compose一键启动支持！" />
+    <option name="LAST_COMMIT_MESSAGE" value="非对称加密token完结撒花，注册中心改用etcd，同时docker-compose一键启动支持！" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

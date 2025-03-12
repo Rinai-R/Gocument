@@ -26,14 +26,17 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="@192.168.195.129 [2]" uuid="bee7392f-b0a3-4b82-abde-1a5ebe66e547">
-      <database-info product="Mongo DB" version="8.0.4" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.20" dbms="MONGO" exact-version="8.0.4" exact-driver-version="1.20" />
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+    <data-source name="@192.168.195.129 [2]" uuid="4fec7bef-9ea1-445a-8c42-7f4cc635a49f">
+      <database-info product="Elasticsearch" version="7.17.10" jdbc-version="4.2" driver-name="Elasticsearch JDBC Driver" driver-version="7.17" dbms="ELASTICSEARCH" exact-version="8.17" exact-driver-version="7.17">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>mongo</user-name>
       <schema-mapping>
         <introspection-scope>
-          <node kind="schema" negative="1" />
+          <node kind="database" qname="@">
+            <node kind="schema" qname="@" />
+          </node>
         </introspection-scope>
       </schema-mapping>
     </data-source>

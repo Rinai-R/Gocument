@@ -42,3 +42,34 @@
 2025-03-09T20:34:43.276+0800	DEBUG	BindError Mismatch type int64 with value string "at index 12: mismatched type with value\n\n\t{\r\n    \"id\":\"1\"\r\n}\n\t............^.....\n"
 2025-03-09T20:35:04.192+0800	DEBUG	解析token成功
 2025-03-09T20:35:04.206+0800	DEBUG	response generate ok
+2025-03-12T19:20:30.269+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:20:30.285+0800	DEBUG	Redis OK
+2025-03-12T19:20:34.332+0800	PANIC	dial tcp 192.168.195.129:3306: connectex: No connection could be made because the target machine actively refused it.mysql connect fail
+2025-03-12T19:21:11.272+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:21:11.285+0800	DEBUG	Redis OK
+2025-03-12T19:21:40.427+0800	PANIC	dial tcp 192.168.195.129:3306: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.mysql connect fail
+2025-03-12T19:25:29.764+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:25:29.777+0800	DEBUG	Redis OK
+2025-03-12T19:25:40.086+0800	PANIC	driver: bad connectionmysql connect fail
+2025-03-12T19:27:11.529+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:27:11.542+0800	DEBUG	Redis OK
+2025-03-12T19:27:11.677+0800	DEBUG	Mysql OK
+2025-03-12T19:27:13.716+0800	PANIC	Get "http://192.168.195.129:9200/": dial tcp 192.168.195.129:9200: connectex: No connection could be made because the target machine actively refused it.elastic connect fail
+2025-03-12T19:32:26.925+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:32:26.938+0800	DEBUG	Redis OK
+2025-03-12T19:32:27.017+0800	DEBUG	Mysql OK
+2025-03-12T19:32:27.125+0800	DEBUG	Elasticsearch Connected
+2025-03-12T19:32:27.212+0800	DEBUG	Elasticsearch OK
+2025-03-12T19:32:27.226+0800	DEBUG	grpc server listening at 127.0.0.1:10002
+2025-03-12T19:32:58.969+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:32:58.983+0800	DEBUG	Viper: DataBase OK
+2025-03-12T19:32:58.983+0800	DEBUG	Redis OK
+2025-03-12T19:32:59.077+0800	DEBUG	Mysql OK
+2025-03-12T19:32:59.082+0800	DEBUG	Elasticsearch Connected
+2025-03-12T19:32:59.114+0800	DEBUG	Elasticsearch OK
+2025-03-12T19:32:59.114+0800	DEBUG	Redis OK
+2025-03-12T19:32:59.201+0800	DEBUG	Mysql OK
+2025-03-12T19:32:59.202+0800	DEBUG	Elasticsearch Connected
+2025-03-12T19:32:59.243+0800	DEBUG	Elasticsearch OK
+2025-03-12T19:32:59.247+0800	DEBUG	grpc server listening at 127.0.0.1:10001
+2025-03-12T19:33:02.543+0800	DEBUG	grpc server listening at 127.0.0.1:10003
