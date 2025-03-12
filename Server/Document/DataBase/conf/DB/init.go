@@ -20,7 +20,7 @@ var DocDB *DBConfig
 func init() {
 	viper.SetConfigType("yaml")
 	viper.SetConfigName("db")
-	viper.SetConfigFile("./Server/Document/DataBase/conf/DB/db.yaml")
+	viper.SetConfigFile("/home/rinai/PROJECTS/Gocument/Server/Document/DataBase/conf/DB/db.yaml")
 	err := viper.ReadInConfig()
 	if err != nil {
 		Logger.Logger.Panic("Viper: " + err.Error())

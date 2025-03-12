@@ -15,7 +15,6 @@ var (
 )
 
 func init() {
-
 	err = Initialize.ETCD.DiscoverService("Document")
 	if err != nil {
 		Logger.Logger.Error(err.Error())

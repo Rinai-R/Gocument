@@ -10,7 +10,7 @@ import (
 )
 
 func InitKey() {
-	privatePEM, err := os.ReadFile("./keys/private.pem")
+	privatePEM, err := os.ReadFile("/home/rinai/PROJECTS/Gocument/keys/private.pem")
 	if err != nil {
 		log.Fatal("open error ", err)
 	}
@@ -20,7 +20,7 @@ func InitKey() {
 		log.Fatalf("解析私钥失败: %v", err)
 	}
 
-	publicPEM, _ := os.ReadFile("./keys/public.pem")
+	publicPEM, _ := os.ReadFile("/home/rinai/PROJECTS/Gocument/keys/public.pem")
 	if privateKey == nil {
 		log.Fatal("Private Key is nil")
 	}
